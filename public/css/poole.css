@@ -259,7 +259,8 @@ tbody tr:nth-child(odd) th {
  */
 
 .lead {
-  font-size: 1.25rem;
+  font-size: 1rem;
+  //font-size: 1.25rem;
   font-weight: 300;
 }
 
@@ -350,6 +351,10 @@ tbody tr:nth-child(odd) th {
   margin-top: -.5rem;
   margin-bottom: 1rem;
   color: #9a9a9a;
+}
+
+.post-date a {
+  color: black;
 }
 
 /* Related posts */
