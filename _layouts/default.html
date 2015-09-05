@@ -1,15 +1,29 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<html lang="en-us">
+
+  <head>
+       <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+       </script>
+  </head>
 
   {% include head.html %}
 
-  <body>
+  <body class="theme-base-0f">
 
     {% include sidebar.html %}
 
     <div class="content container">
       {{ content }}
     </div>
+
+    <h3 class="masthead-title">
+    <a href="/" title="Home">{{ site.title }}</a>
+
+    {% for page in site.pages_list %}
+      &nbsp;&nbsp;&nbsp;
+      <small><a href="{{ page[1]  }}">{{ page[0] }}</a></small>
+    {% endfor %}
+    </h3>
 
   </body>
 </html>
