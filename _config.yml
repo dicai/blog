@@ -8,11 +8,10 @@ relative_permalinks: true
 
 # Setup
 title:            'topics of interest'
-#title:            'Area under the Curve'
 tagline:          'Diana Cai'
 description:      'on machine learning, statistics, computer science, and math.'
-url:              http://dianacai.com
-baseurl:          /
+url:              http://dicai.github.io
+baseurl:          /blog
 
 author:
   name:           'Diana Cai'
