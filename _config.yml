@@ -1,7 +1,7 @@
 # Dependencies
 markdown:         kramdown
 #markdown:         KramdownPygments
-highlighter:      pygments
+#highlighter:      pygments
 
 # Permalinks
 permalink:        pretty
@@ -27,10 +27,10 @@ paginate:         5
 #  repo:           https://github.com/dicai
 #
 
-pages_list:
+#pages_list:
     #about: '/about'
-    stat-ml: '/statml'
-    compsci: '/compsci'
-    other: '/other'
-    archive: '/archive'
+#    stat-ml: '/statml'
+#    compsci: '/compsci'
+#    other: '/other'
+#    archive: '/archive'
     #Feed: '/atom.xml'
