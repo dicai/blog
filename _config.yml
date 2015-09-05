@@ -27,10 +27,9 @@ paginate:         5
 #  repo:           https://github.com/dicai
 #
 
-#pages_list:
-    #about: '/about'
-#    stat-ml: '/statml'
-#    compsci: '/compsci'
+pages_list:
+    stat-ml: '/statml'
+    compsci: '/compsci'
 #    other: '/other'
-#    archive: '/archive'
-    #Feed: '/atom.xml'
+    archive: '/archive'
+    feed: '/atom.xml'
