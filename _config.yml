@@ -11,8 +11,8 @@ relative_permalinks: true
 title:            'topics of interest'
 tagline:          'Diana Cai'
 description:      'on machine learning, statistics, computer science, and math.'
-url:              http://dicai.github.io/blog/
-baseurl:          /
+url:              http://dicai.github.io/
+baseurl:          /blog/
 
 author:
   name:           'Diana Cai'
