@@ -1,6 +1,6 @@
 # Dependencies
-#markdown:         kramdown
-markdown:         KramdownPygments
+markdown:         kramdown
+#markdown:         KramdownPygments
 highlighter:      pygments
 
 # Permalinks
@@ -20,16 +20,9 @@ author:
 
 paginate:         5
 
-# Custom vars
-#version:          2.1.0
-
-#github:
-#  repo:           https://github.com/dicai
-#
 
 pages_list:
     stat-ml: '/statml'
     compsci: '/compsci'
-#    other: '/other'
     archive: '/archive'
     feed: '/atom.xml'
