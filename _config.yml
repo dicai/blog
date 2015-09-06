@@ -12,7 +12,7 @@ title:            'topics of interest'
 tagline:          'Diana Cai'
 description:      'on machine learning, statistics, computer science, and math.'
 url:              http://dicai.github.io
-baseurl:          /blog
+baseurl:          /blog/
 
 author:
   name:           'Diana Cai'
