@@ -12,7 +12,7 @@ title:            'topics of interest'
 tagline:          'Diana Cai'
 description:      'on machine learning, statistics, computer science, and math.'
 url:              http://dicai.github.io
-#baseurl:          /blog
+baseurl:          /
 
 author:
   name:           'Diana Cai'
@@ -24,5 +24,6 @@ paginate:         5
 pages_list:
     stat-ml: '/statml'
     compsci: '/compsci'
-    archive: '/archive'
-    feed: '/atom.xml'
+    archive: 'archive'
+    other: '/other'
+#feed: '/atom.xml'
