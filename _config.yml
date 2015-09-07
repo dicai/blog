@@ -8,7 +8,7 @@ permalink:        pretty
 relative_permalinks: true
 
 # Setup
-title:            'topics of interest'
+title:            'topics'
 tagline:          'Diana Cai'
 description:      'on machine learning, statistics, computer science, and math.'
 url:              http://dicai.github.io/
@@ -22,8 +22,8 @@ paginate:         5
 
 
 pages_list:
-    stat-ml: '/statml'
-    compsci: '/compsci'
-    archive: 'archive'
-    other: '/other'
+    stat-ml: '/blog/statml'
+    compsci: '/blog/compsci'
+    archive: '/blog/archive'
+    other: '/blog/other'
 #feed: '/atom.xml'
