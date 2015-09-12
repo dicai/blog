@@ -36,10 +36,10 @@ Suppose we have some universe \\(U\\), which has a cardinality of at least
 elements \\(x_1,\ldots,x_k\\) and hash function \\(h\\) chosen uniformly
 from \\(\mathcal{H}\\), we have
 
-$$\Pr(h(x_1)=\ldots=h(x_k)) \leq (n^{k-1})^{-1}.$$
+\\[ \Pr(h(x_1)=\ldots=h(x_k)) \leq (n^{k-1})^{-1}.\\]
 
 That is, the probability of all \\(k\\) elements hashing to the same bin is at
-most \\(\frac{1}{n^{k-1}}\\).
+most \\[\frac{1}{n^{k-1}}.\\]
 
 A family of hash functions \\(\mathcal{H}:U\rightarrow V\\) is called strongly
 \\(k\\)-universal if for any \\(k\\) elements \\(x_1,\ldots,x_k\\) and values
@@ -62,24 +62,25 @@ We now discuss how to generate hash functions from a 2-universal family. Let the
 universe \\(U = \\{0,\ldots,m-1\\}\\) and let the range be
 \\(V=\\{0,\ldots,n-1\\}\\), where \\(m \geq n\\). Choose a prime \\(p \geq m\\). Consider the hash function
 
-$$h_{ab}(x) = ((ax + b) \mod p)\mod n.$$
+\\[h_{ab}(x) = ((ax + b) \mod p)\mod n.\\]
 
 The 2-universal hash family is
-$$\mathcal{H} = \{h_{a,b} | 1 \leq a \leq p-1, 0\leq b \leq p-1\}.$$
+
+\\[ \mathcal{H} = \left\\{h_{a,b} \,|\, 1 \leq a \leq p-1, 0\leq b \leq p-1
+    \right\\}. \\]
 
 Thus, to get a 2-universal hash function from this family, we only need to generate \\(a\\) and \\(b\\) within the appropriate ranges (note \\(a\\) cannot be 0).
 
 To generate hash functions from a strongly 2-universal family, we have the family
-
-$$\mathcal{H} = \{h_{a,b} | 0 \leq a, b \leq p-1\},$$
+\\[ \mathcal{H} = \left\\{h_{a,b} \,|\, 0 \leq a, b \leq p-1 \right\\}, \\]
 
  where the hash function is given by
 
-$$h_{ab}(x) = (ax + b) \mod p.$$
+\\[h_{ab}(x) = (ax + b) \mod p.\\]
 
 In future posts, we will describe applications of universal hash families.
 
-Resources
+#### Resources
 
 Mitzenmacher, Michael, and Eli Upfal. Probability and computing: Randomized algorithms and probabilistic analysis. Cambridge University Press, 2005.
 
