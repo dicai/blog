@@ -74,14 +74,14 @@ The goal is to bound the probability that the distance between $$X$$ and its
 expectation is greater some $$\delta\mu$$, i.e.,
 we want bounds on $$\Pr(X \geq (1+\delta)\mu)$$ and $$\Pr(X \leq (1-\delta)\mu)$$.
 
-The MGF of $X$ is bounded by $$\exp{(e^t-1)\mu}$$, which can be seen by
+The MGF of $$X$$ is bounded by $$\exp{(e^t-1)\mu}$$, which can be seen by
 computing the product of the MGF for each $$X_n$$  and bounding the individual terms.
 
 We have the following Chernoff bounds for deviations above the mean by applying
 Markov's inequality using the MGF of $$X$$:
 
 For any $$\delta > 0$$,
-\\[ \Pr(X \geq (1+\delta)\mu) < \\\{\left( \frac{e^\delta}{(1+\delta)^{1+\delta}} \right)\\\}^{\mu}.\\]
+\\[ \Pr(X \geq (1+\delta)\mu) < \left\\{\left( \frac{e^\delta}{(1+\delta)^{1+\delta}} \right)\right\\}^{\mu}.\\]
 For $$0 < \delta \leq 1$$,
 \\[ \Pr(X \geq (1+\delta)\mu) \leq \exp\left\\{\frac{-\mu\delta^2}{3}\right\\}.\\]
 For $$R \geq 6 \mu$$,
@@ -92,7 +92,7 @@ Similarly, for deviations below the mean, we have, for $$0 < \delta < 1$$:
 \\[ \Pr(X \leq (1-\delta)\mu) \leq \exp\left\\{\frac{-\mu\delta^2}{2}\right\\}.\\]
 
 Some of the upper and lower bounds above can be used to derive the following form of the  Chernoff bound: for $$0 < \delta < 1$$,
-\\[\Pr(|X-\mu| \geq \delta\mu) \leq 2 \exp\{\frac{-\mu\delta^2}{3}\}.\\]
+\\[\Pr(|X-\mu| \geq \delta\mu) \leq 2 \exp\left\\{\frac{-\mu\delta^2}{3}\right\\}.\\]
 
 When we don't have the exact expectation $$\mathbb{E}[X]$$ available, we can use the
 inequalities $$\mu \geq \mathbb{E}[X]$$ and $$\mu \leq \mathbb{E}[X]$$ instead.
