@@ -12,7 +12,7 @@ title: stat-ml
 {% for post in site.posts %}
   {% for tag in post.tags %}
     {% if tag == "bnp" %}
-  * {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ post.url }})
+  * {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ site.baseurl }}{{ post.url }})
 
      {{ post.summary }}...
     {% break %}
@@ -25,7 +25,7 @@ title: stat-ml
 {% for post in site.posts %}
   {% for tag in post.tags %}
     {% if tag == "probability" %}
-  * {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ post.url }})
+  * {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ site.baseurl }}{{ post.url }})
 
      {{ post.summary }}...
     {% break %}
@@ -38,7 +38,7 @@ title: stat-ml
 {% for post in site.posts %}
   {% for tag in post.tags %}
     {% if tag == "inference" or tag == "machine learning" %}
-  * {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ post.url }})
+  * {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ site.baseurl }}{{ post.url }})
 
      {{ post.summary }}...
     {% break %}
