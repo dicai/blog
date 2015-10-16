@@ -3,11 +3,11 @@ layout: post
 title: Perfect Hashing with a 2-Universal Hash Family
 tags:
 - computer science
-summary: Previously, we discussed universal hash families (link). In this post, we discuss a method of using a 2-universal hash family along with a Las Vegas algorithm (link) to allow for perfect hashing, where the time required to find an item in a hash table is constant.
+summary: Previously, we discussed universal hash families. In this post, we discuss a method of using a 2-universal hash family along with a Las Vegas algorithm to allow for perfect hashing, where the time required to find an item in a hash table is constant.
 ---
 
-Previously, we discussed universal hash families (link). In this post, we discuss a method of using a 2-universal hash family along with a
-Las Vegas algorithm (link) to allow for perfect hashing, where the time required to find an item in a hash table is constant.
+Previously, we discussed [universal hash families](http://www.dianacai.com/blog/2014/09/06/universal-hashes/). In this post, we discuss a method of using a 2-universal hash family along with a
+[Las Vegas algorithm](https://en.wikipedia.org/wiki/Las_Vegas_algorithm) to allow for perfect hashing, where the time required to find an item in a hash table is constant.
 
 A dictionary is a data structure used to maintain a set $$S$$ under insertion and deletion of elements, or keys, from some universe $$U$$. Dictionaries are typically implemented efficiently using hash tables.
 
