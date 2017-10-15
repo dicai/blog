@@ -8,7 +8,7 @@ title: archive
 
 ## specific areas
 
-### \#nonparametricbayes (BNP)
+<!--### \#nonparametricbayes (BNP)
 
 {% for post in site.posts %}
   {% for tag in post.tags %}
@@ -18,19 +18,20 @@ title: archive
     {% endif %}
   {% endfor %}
 {% endfor %}
+-->
 
 ### \#algorithms
 
 {% for post in site.posts %}
   {% for tag in post.tags %}
-    {% if tag == "nonparametricbayes" %}
+    {% if tag == "algorithms" %}
   * {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ site.baseurl }}{{ post.url }})
     {% break %}
     {% endif %}
   {% endfor %}
 {% endfor %}
----
 
+---
 
 ## general topics
 
