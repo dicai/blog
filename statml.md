@@ -7,6 +7,7 @@ title: stat-ml
 
 ## statistics and machine learning posts
 
+<!--
 ### bayesian nonparametrics
 
 {% for post in site.posts %}
@@ -19,6 +20,7 @@ title: stat-ml
     {% endif %}
   {% endfor %}
 {% endfor %}
+-->
 
 ### probability
 
@@ -33,6 +35,8 @@ title: stat-ml
   {% endfor %}
 {% endfor %}
 
+
+<!--
 ### statistical modeling and inference
 
 {% for post in site.posts %}
@@ -45,4 +49,5 @@ title: stat-ml
     {% endif %}
   {% endfor %}
 {% endfor %}
+-->
 
