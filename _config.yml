@@ -3,9 +3,12 @@ markdown:         kramdown
 #markdown:         KramdownPygments
 highlighter:      pygments
 
+# plugins
+gems: [jekyll-paginate]
+
 # Permalinks
 permalink:        pretty
-relative_permalinks: true
+#relative_permalinks: true
 
 # Setup
 title:            'topics'

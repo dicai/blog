@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Important inequalities for probabilistic methods
+tags:
+- statistics
+summary: In statistics, machine learning, theoretical computer science, and anything that incorporates randomness, we are interested in studying its behavior (e.g., asymptotic convergence rates, approximation error) using probabilistic tail bounds.
 ---
 In statistics, machine learning, theoretical computer science, and anything that incorporates randomness, we are interested in studying its behavior
 (e.g., asymptotic convergence rates, approximation error) using probabilistic tail bounds.
