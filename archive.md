@@ -76,7 +76,7 @@ title: archive
   {% endfor %}
 {% endfor %}
 
-### \#academics
+<!--### \#academics
 
 {% for post in site.posts %}
   {% for tag in post.tags %}
@@ -88,6 +88,7 @@ title: archive
     {% endif %}
   {% endfor %}
 {% endfor %}
+-->
 
 ### \#misc
 
