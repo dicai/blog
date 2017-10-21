@@ -36,12 +36,11 @@ title: stat-ml
 {% endfor %}
 
 
-<!--
 ### statistical modeling and inference
 
 {% for post in site.posts %}
   {% for tag in post.tags %}
-    {% if tag == "inference" or tag == "machine learning" %}
+    {% if tag == "inference" or tag == "machine learning" or tag == "statistics" %}
   * {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ site.baseurl }}{{ post.url }})
 
      {{ post.summary }}...
@@ -49,5 +48,4 @@ title: stat-ml
     {% endif %}
   {% endfor %}
 {% endfor %}
--->
 
