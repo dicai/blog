@@ -1,10 +1,11 @@
 ---
 layout: page
-title: archive
+title: by topic
 ---
 
 ## blog archive
 
+---
 
 ## specific areas
 
@@ -103,12 +104,4 @@ title: archive
   {% endfor %}
 {% endfor %}
 
----
 
-### all posts
-
-{% for post in site.posts %}
-  * {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ site.baseurl }}{{ post.url }})
-{% endfor %}
-
----

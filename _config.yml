@@ -27,6 +27,7 @@ paginate:         5
 pages_list:
     stat-ml: '/blog/statml'
     compsci: '/blog/compsci'
+    all: '/blog/allposts'
     archive: '/blog/archive'
     other: '/blog/other'
 #feed: '/atom.xml'
