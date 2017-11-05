@@ -5,6 +5,7 @@ title: other
 
 ## other posts
 
+<!--
 ### academics
 
 {% for post in site.posts %}
@@ -17,6 +18,7 @@ title: other
     {% endif %}
   {% endfor %}
 {% endfor %}
+-->
 
 ### miscellaneous
 
