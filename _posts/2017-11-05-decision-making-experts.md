@@ -5,12 +5,12 @@ author: Diana Cai
 tags:
 - computer science
 - algorithms
-summary: In this post, we will discuss a few simple algorithms for online decision making with expert advice. In particular, this setting assumes no prior distribution on the set of outcomes, but we hindsight to improve future decisions. The algorithms discussed include a simple deterministic and randomized majority weighted decision algorithm,
+summary: In this post, we will discuss a few simple algorithms for online decision making with expert advice. In particular, this setting assumes no prior distribution on the set of outcomes, but we use hindsight to improve future decisions. The algorithms discussed include a simple deterministic and randomized majority weighted decision algorithm,
 ---
 
 In this post, we will discuss a few simple algorithms for online decision making with expert
 advice. In particular, this setting assumes no prior distribution on the set of
-outcomes, but we hindsight to improve future decisions. The algorithms discussed include a simple deterministic and randomized majority weighted decision algorithm.
+outcomes, but we use hindsight to improve future decisions. The algorithms discussed include a simple deterministic and randomized majority weighted decision algorithm.
 
 Lastly, we discuss a randomized algorithm called the _multiplicative weights algorithm_. This
 algorithm has been discovered in a number of fields, and is the basis of many
@@ -33,7 +33,7 @@ corresponding to up/down. At the end of the day, we observe the final price of
 the stock: if we make a correct prediction, we lose nothing, but if we make an
 incorrect prediction, we lose 1 dollar.
 
-We will consider the setting of _total uncertainty_, where we have a priori have
+We will consider the setting of _total uncertainty_, where we a priori have
 no knowledge of the distribution on the set of outcomes, e.g., due to lack of
 computational resources or data.
 
@@ -41,12 +41,12 @@ We will consider a few algorithms based on knowledge of $$n$$ experts.
 
 # Predictions with expert advice
 
-Consider again the example of predicting a stock's price, which can be arbitrary
+Consider again the example of predicting a stock's price, whose movement can be _arbitrary_
 or _adversarial_ (which comes up, in practice, in a variety of other settings).
 But, we get to view the predictions of $$n$$ experts (who may or may not be good
 at predicting and could even be correlated in some manner).
 
-We would like to design an algorithm that limiting the total cost--i.e., bad predictions--by
+We would like to design an algorithm that limiting the total cost -- i.e., bad predictions -- by
 limiting it to be about the same as the _best_ expert. Because we do not know who
 the best expert is until the end, we need some way of maintaining and updating
 our belief of the best expert so that we can make some prediction in each round.
@@ -70,13 +70,13 @@ Let $$\eta \in (0,1)$$ be a parameter such that if the expert makes a mistake,
 we will decay their weight by $$(1-\eta)$$, i.e., for the $$i$$th expert, we have
 for the $$t$$th round
 
-$$w_i^{(t+1)} = (1-\eta) w_i^{(t)}.$$
+$$w_i^{(t+1)} = (1-\eta) \, w_i^{(t)}.$$
 
 Then, after $$T$$ steps, if $$m_i^{(T)}$$ is the number of mistakes from expert
 $$i$$, we have following bound on the number of mistakes of our algorithm $$M^{(T)}$$:
 for all $$i$$, we have
 
-$$M^{(T)} \leq 2(1+\eta)m_i^{(T)} + 2 \frac{\log n}{\eta}.$$
+$$M^{(T)} \leq 2(1+\eta) \, m_i^{(T)} + 2 \frac{\log n}{\eta}.$$
 
 Note that the _best_ expert will have the fewest number of mistakes $$m_i^{(T)}$$,
 and that the bound holds for all experts. Thus, the number of mistakes the
@@ -95,7 +95,7 @@ predict up with probability proportional to $$\frac{3}{4}$$.
 
 For this algorithm, we instead have the bound
 
-$$M^{(T)} \leq (1+\eta)m_i^{(T)} + 2 \frac{\log n}{\eta},$$
+$$M^{(T)} \leq (1+\eta) \, m_i^{(T)} + 2 \frac{\log n}{\eta},$$
 
 which is a factor of 2 less (in the first term) than the above deterministic
 algorithm. Thus, this algorithm will perform roughly on the same order as the
