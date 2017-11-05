@@ -3,6 +3,7 @@ layout: post
 title: Perfect Hashing with a 2-Universal Hash Family
 tags:
 - computer science
+- algorithms
 summary: Previously, we discussed universal hash families. In this post, we discuss a method of using a 2-universal hash family along with a Las Vegas algorithm to allow for perfect hashing, where the time required to find an item in a hash table is constant.
 ---
 
