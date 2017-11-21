@@ -5,7 +5,7 @@ author: Diana Cai
 tags:
 - statistics
 - references
-- bnp
+- nonparametricbayes
 summary: This post is a collection of references for Bayesian nonparametrics that I've found helpful or wish that I had known about earlier.
 ---
 
