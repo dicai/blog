@@ -6,6 +6,7 @@ tags:
 - statistics
 - references
 - nonparametricbayes
+- bayesian
 summary: This post is a collection of references for Bayesian nonparametrics that I've found helpful or wish that I had known about earlier.
 ---
 
