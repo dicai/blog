@@ -9,7 +9,7 @@ title: by topic
 
 ## specific areas
 
-<!--### \#nonparametricbayes (BNP)
+### \#nonparametricbayes
 
 {% for post in site.posts %}
   {% for tag in post.tags %}
@@ -19,7 +19,6 @@ title: by topic
     {% endif %}
   {% endfor %}
 {% endfor %}
--->
 
 ### \#algorithms
 
