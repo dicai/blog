@@ -9,7 +9,7 @@ title: by topic
 
 ## specific areas
 
-### \#nonparametricbayes
+### \#nonparametricBayes
 
 {% for post in site.posts %}
   {% for tag in post.tags %}
