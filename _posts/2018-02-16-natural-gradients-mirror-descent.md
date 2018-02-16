@@ -111,6 +111,7 @@ subject to the constraint that \\(||v||^2 = v^\top H v =1\\), i.e., \\(v\\) is a
 unit vector representating just the direction.
 
 Setting the derivative with respect to \\(v\\) of the Lagrangian to 0, i.e.,
+
 $$\begin{aligned}
     \mathcal{L}(\theta,v,\lambda)
     =     \nabla_v
