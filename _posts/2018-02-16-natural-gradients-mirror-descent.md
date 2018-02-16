@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Natural gradient descent is mirror descent in the dual manifold
+title: Natural gradient descent and mirror descent
 author: Diana Cai
 tags:
 - statistics
