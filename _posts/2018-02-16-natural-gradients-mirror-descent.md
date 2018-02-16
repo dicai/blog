@@ -102,6 +102,7 @@ magnitude \\(\epsilon\\) and direction \\(v\\), and search for the vector
 \\(v\\) that decreases the value of the function the most.
 
 Writing the linearized function, we have
+
 $$\begin{aligned}
     f(\theta  + d\theta ) = f(\theta) + \epsilon v^\top \nabla     f(\theta)
 \end{aligned}$$
@@ -261,7 +262,7 @@ primal and dual Riemannian manifolds induced by these divergences.
     \\(\Phi = \{\mu: g(\theta) = \mu, \theta \in \Theta\}\\), i.e., the
     image of \\(\Theta\\) under the continuous map \\(g = \nabla G\\).
 
-#### Theorem (Raskutti and Mukherjee, 2014):
+#### Theorem (Raskutti and Mukherjee, 2014) [2]:
 
 The mirror descent step with Bregman divergence defined by \\(G\\) applied
 to the function \\(f\\) in the space \\(\Theta\\) is equivalent to the natural
