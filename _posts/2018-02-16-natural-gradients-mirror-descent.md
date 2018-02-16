@@ -322,11 +322,11 @@ Riemannian manifold.
 What does this mean? For natural gradient descent we know that
 
 -   the natural gradient is the direction of steepest descent along a
-    Riemannian mnifold
+    Riemannian manifold, and
 
 -   it is Fisher efficient for parameter estimation (achieves the CRLB,
     i.e., the variance of any unbiased estimator is at least as high as
-    the inverse Fisher information)
+    the inverse Fisher information),
 
 but neither of these things are known for mirror descent.
 
