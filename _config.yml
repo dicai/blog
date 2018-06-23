@@ -19,7 +19,7 @@ baseurl:          /blog
 
 author:
   name:           'Diana Cai'
-  url:            https://twitter.com/dicai
+  url:            https://twitter.com/dianarycai
 
 paginate:         5
 

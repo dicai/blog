@@ -65,7 +65,7 @@ html {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 18rem;
+    width: 13rem;
     text-align: left;
   }
 }
@@ -79,8 +79,8 @@ html {
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
-  font-family: "Abril Fatface", serif;
-  font-size: 3.25rem;
+  font-family: "Abril", serif;
+  font-size: 2.5rem;
 }
 
 /* Sidebar nav */
@@ -122,22 +122,22 @@ a.sidebar-nav-item:focus {
  */
 
 .content {
-  padding-top:    4rem;
-  padding-bottom: 4rem;
+  padding-top:    3rem;
+  padding-bottom: 3rem;
 }
 
 @media (min-width: 48em) {
   .content {
     max-width: 38rem;
-    margin-left: 20rem;
-    margin-right: 2rem;
+    margin-left: 16rem;
+    margin-right: 1rem;
   }
 }
 
 @media (min-width: 64em) {
   .content {
-    margin-left: 22rem;
-    margin-right: 4rem;
+    margin-left: 16rem;
+    margin-right: 1rem;
   }
 }
 
@@ -211,6 +211,15 @@ a.sidebar-nav-item:focus {
 .theme-base-0b .content a,
 .theme-base-0b .related-posts li a:hover {
   color: #90a959;
+}
+
+/* My Theme */
+.theme-base-0-dc .sidebar {
+  background-color: #588A82;
+}
+.theme-base-0-dc .content a,
+.theme-base-0-dc .related-posts li a:hover {
+  color: #588A82;
 }
 
 /* Cyan */
