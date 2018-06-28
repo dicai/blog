@@ -126,6 +126,19 @@ automatically loaded. E.g., a version of the following:
 
 ```
 
+### subfiles
+
+For longer documents, I use the [subfiles package](https://en.wikibooks.org/wiki/LaTeX/Modular_Documents#Subfiles) extensively.
+This allows me to split a document into smaller files, which can then be
+individually compiled into its own document. Subfiles inherit the packages, etc.,
+that are defined in the main file in which the subfiles are inserted.
+
+The advantage of using subfiles is that you
+can just edit the subfile you're currently focusing on, which is much faster
+than compiling the entire document (especially one with many images and references).
+This also helps with reducing the number of git conflicts one encounters when
+collaborating on a document.
+
 ### macros
 
 I have a set of macros that I commonly use that are imported when I load a .tex
