@@ -20,7 +20,7 @@ achieved with some other text editor, e.g., emacs or sublime.
 
 ### Text editor: vim
 
-I use vim (e.g., in a terminal), but for writing papers, I often also like using [macvim](http://macvim-dev.github.io/macvim/), which is
+I use the text editor, [vim](https://vim.rtorr.com/). For writing documents, I often also like using [macvim](http://macvim-dev.github.io/macvim/), which is
 basically vim but with a few extra GUI features, such as scrolling and text
 selection features.
 
@@ -29,7 +29,7 @@ selection features.
 For my pdf reader, I use the [Skim app](https://skim-app.sourceforge.io/). The nice thing about Skim is that it will
 autoupdate the pdf after you compile the tex and keep the document in the same
 place. By contrast, Preview will refresh the document and reload it from the
-beginning of the document, which is quite cumbersome if you were editing text on page 5.
+beginning of the document, which is quite cumbersome if you'd just edited text on page 5.
 
 ### Compilation: latexmk + vim keybindings
 
