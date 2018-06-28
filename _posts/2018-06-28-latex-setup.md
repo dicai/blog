@@ -50,7 +50,7 @@ I have the following key bindings in vim:
 * ```shift-C``` cleans the directory
 
 For instance, the compile keybinding above is done by adding the following line
-the the .vimrc file
+to the .vimrc file
 
 ```vim
 autocmd FileType tex nmap <buffer> <C-T> :!latexmk -pdf %<CR>
