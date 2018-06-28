@@ -37,7 +37,7 @@ In vim, I have several keybindings set up in my .vimrc file.
 Currently, I compile the .tex file using [latexmk](http://mg.readthedocs.io/latexmk.html).
 Files can be compiled to pdf with the command
 
-```
+```bash
 latexmk -pdf [file]
 ```
 
@@ -52,7 +52,7 @@ I have the following key bindings in vim:
 For instance, the compile keybinding above is done by adding the following line
 the the .vimrc file
 
-```
+```vim
 autocmd FileType tex nmap <buffer> <C-T> :!latexmk -pdf %<CR>
 ```
 
@@ -97,7 +97,7 @@ edit this in one of the parens instead of in both lines.
 To use [vim plugins](https://github.com/VundleVim/Vundle.vim) (after installing), you just need to add the github page to your .vimrc file, e.g., for
 [Ultisnips](https://github.com/SirVer/ultisnips), add the line
 
-```
+```vim
 Plugin 'SirVer/ultisnips'
 ```
 
@@ -109,7 +109,7 @@ start a new vim document, i.e., when executing ```vim notes.tex``` in the
 command line, a fully-functional tex skeleton with all the packages I normally use and font styles are
 automatically loaded. E.g., a version of the following:
 
-```
+```tex
 \documentclass[11pt]{article}
 
 \usepackage{amsmath, amssymb, amsthm, bbm}
