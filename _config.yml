@@ -5,6 +5,8 @@ highlighter:      pygments
 
 # plugins
 gems: [jekyll-paginate]
+plugins:
+    - jekyll-seo-tag
 
 # Permalinks
 permalink:        pretty
