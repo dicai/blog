@@ -1,0 +1,123 @@
+---
+layout: post
+title: The Johnson-Lindenstrauss Lemma
+author: Diana Cai
+tags:
+- statistics
+- computer science
+- dimensionality reduction
+- high-dimensional geometry
+- probabilistic method
+summary: The so-called curse of dimensionality reflects the idea that many methods are more difficult in higher-dimensions. This difficulty may be due a number of issues that become more complicated in higher-dimensions
+---
+
+The so-called "curse of dimensionality" reflects the idea that many methods are more difficult in higher-dimensions.
+This difficulty may be due a number of issues that become more complicated in
+higher-dimensions: e.g., NP-hardness, sample complexity, or algorithmic efficiency.
+Thus, for such problems, the data are often first transformed using some
+dimensionality reduction technique before applying the method of choice.
+In this post, we discuss a result in high-dimensional geometry regarding
+how much one can reduce the dimension while still preserving $$\ell_2$$ distances.
+
+## Johnson-Lindenstrauss Lemma
+
+Given $$N$$ points \\(z_1,z_2,\ldots,z_N \in \mathbb{R}^d\\),
+we want to find $$N$$ points \\(u_1,\ldots,u_N \in \mathbb{R}^k\\),
+where $$k \ll d$$, such that the distance between points is approximately preserved, i.e.,
+for all $$i,j$$,
+\\[
+    ||z_i - z_j||_2 \leq ||u_i - u_j||_2 \leq (1+\epsilon) ||z_i-z_j||_2,
+\\]
+where $$||z||_2 := \sqrt{\sum_l |z_{l}|^2}$$ is the $$\ell_2$$ norm.
+Thus, we'd like to find some mapping $$f$$, where $$u_i = f(z_i)$$, that maps
+the data to a much lower dimension while satisfying the above inequalities.
+
+The _Johnson-Lindenstrauss Lemma_ (JL lemma) tells us that we need dimension $$k = O\left(\frac{\log N}{\epsilon^2}\right)$$,
+and that the mapping $$f$$ is a (random) linear mapping. The proof of this lemma
+is essentially given by constructing $$u_i$$ via a random projection, and then
+showing that for all $$i,j$$, the random variable $$||u_i - u_j||$$ concentrates around its expectation.
+
+This argument is an example of the _probabilistic method_, which is a nonconstructive method of
+proving existence of entities with particular properties: if the probability of
+getting an entity with the desired property is positive, then this entity must be
+an element of the sample space and therefore exists.
+
+### Proof of the JL lemma
+
+We can randomly choose $$k$$ vectors $$(x_n)_{n=1}^k$$, where each $$x_n \in \mathbb{R}^d$$, by
+choosing each coordinate $$x_{nl}$$ of the vector $$x_n$$ randomly from the set
+\\[
+\left\\{\left(\frac{1+\epsilon}{k}\right)^{\frac{1}{2}},-\left(\frac{1+\epsilon}{k}\right)^{\frac{1}{2}}\right\\}.
+\\]
+
+Now consider the mapping from $$\mathbb{R}^d \rightarrow \mathbb{R}^k$$ defined by the inner products of $$z \in \mathbb{R}^d$$ with the $$k$$
+random vectors:
+\\[z \mapsto (z^\top x_1, \ldots, z^\top x_k)\\]
+So, each vector $$u_i = (z_i^\top x_1,\ldots, z_i^\top x_k)$$ is obtained via a
+random projection. (Alternatively, we can think of the mapping as a random linear transformation
+given by a random matrix $$A \in \mathbb{R}^{k \times d}$$, where the $$k$$ vectors form the rows of the matrix, and $$Az_i = u_i$$.)
+The goal is to show that there exists some $$u_1,\ldots,u_k$$ that satisfies the
+above inequalities.
+
+Fixing $$i,j$$, define $$u := u_i - u_j$$ and $$z := z_i - z_j$$, and $$Y_n := \left(\sum_{l=1}^d z_l x_{nl} \right)^2$$.
+Thus, we can write the squared $$\ell_2$$ norm of $$u$$ as
+$$
+\begin{aligned}
+||u||_2^2 = ||u_i - u_j||_2^2 &= \sum_{n=1}^k \left( \sum_{l=1}^d z_l x_{nl} \right)^2
+= \sum_{n=1}^k Y_n
+\end{aligned},
+$$
+where $$x_{nl}$$ refers to the $$l$$th component of the $$n$$th vector.
+
+Now we consider the random variable $$Y_n$$ in the sum. The expectation is
+\\[ \mathbb{E}(Y_n) = \frac{1+\epsilon}{k} ||z||_2^2. \\]
+So, the expectation of \\(||u||_2^2\\) is
+
+$$\mu := \mathbb{E}(||u||_2^2) = \mathbb{E}(\sum_{n=1}^k Y_n) = (1+\epsilon) ||z||_2^2. $$
+
+It remains to show that $$||u||_2^2$$ concentrates around its mean $$\mu$$, which we can
+do using a Chernoff bound. In particular, consider the two cases of
+$$||u||_2^2 > (1 + \delta) \mu$$ and $$||u||_2^2 < (1 - \delta) \mu$$.
+Via a Chernoff bound, the probability of at least one of these two "bad" events occurring is upper bounded by
+\\[
+    \Pr[\\{ ||u||^2 > (1+\delta) \mu)\\} \lor \\{||u||^2 > (1-\delta) \mu \\}]  < \exp(-c \delta^2 k),
+\\]
+for some $$c > 0$$.
+
+Recall that $$||u|| := ||u_i - u_j||$$, and so there are $$\binom{N}{2}$$ such random variables.
+Now choosing $$\delta = \frac{\epsilon}{2}$$, the probability that any of these random variables is outside of
+$$(1 \pm \frac{\epsilon}{2})$$ of their expected value is bounded by
+
+$$
+\binom{N}{2} \exp\left(-c \left(\frac{\epsilon}{2}\right)^2 k \right),
+$$
+
+which follows from a union bound.
+
+Choosing $$k > \frac{8(\log N + \log c)}{\epsilon^2}$$ ensures that with all
+$$\binom{N}{2}$$  variables are within $$(1 \pm \frac{\epsilon}{2})$$ of their
+expectations, i.e., $$(1+\epsilon) ||z||_2^2$$. Thus, rewriting this, we have that for all $$i,j$$,
+
+$$
+\begin{aligned}
+(1 - \frac{\epsilon}{2})(1+ \epsilon) ||z_i - z_j||_2^2 &\leq ||u_i - u_j||_2^2 \leq (1 + \frac{\epsilon}{2})(1+ \epsilon) ||z_i - z_j||_2^2
+\\
+\implies ||z_i - z_j||_2^2 &\leq ||u_i - u_j||_2^2 \leq (1+ \epsilon)^2 ||z_i - z_j||_2^2,
+\end{aligned},
+$$
+
+which then implies the desired result:
+
+$$||z_i - z_j||_2 \leq ||u_i - u_j||_2 \leq (1+ \epsilon) ||z_i - z_j||_2.$$
+
+
+
+### References
+
+1. Arora and Kothari. [High Dimensional Geometry, Curse of Dimensionality,
+   Dimension Reduction.](https://www.cs.princeton.edu/courses/archive/fall16/cos521/Lectures/lec9.pdf)
+2. Dasgupta and Gupta. [An Elementary Proof of  Theorem of Johnson and
+   Lindenstrauss.](http://cseweb.ucsd.edu/~dasgupta/papers/jl.pdf)
+3. Nelson. Dimensionality Reduction Notes
+[Part 1](http://people.seas.harvard.edu/~minilek/madalgo2015/notes1.pdf)
+[Part 2](http://people.seas.harvard.edu/~minilek/madalgo2015/notes2.pdf)
