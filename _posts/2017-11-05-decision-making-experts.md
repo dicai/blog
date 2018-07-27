@@ -5,7 +5,7 @@ author: Diana Cai
 tags:
 - computer science
 - algorithms
-summary: In this post, we will discuss a few simple algorithms for online decision making with expert advice. In particular, this setting assumes no prior distribution on the set of outcomes, but we use hindsight to improve future decisions. The algorithms discussed include a simple deterministic and randomized majority weighted decision algorithm,
+summary: In this post, we will discuss a few simple algorithms for online decision making with expert advice. In particular, this setting assumes no prior distribution on the set of outcomes, but we use hindsight to improve future decisions. The algorithms discussed include a simple deterministic and randomized majority weighted decision algorithm, and the multiplicative weights algorithm.
 ---
 
 In this post, we will discuss a few simple algorithms for online decision making with expert
