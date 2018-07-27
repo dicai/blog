@@ -7,7 +7,7 @@ tags:
 - productivity
 - tools
 - misc
-summary: I'll describe my current LaTeX setup: vim, skim, and latexmk. I currently write notes and papers using LaTeX on a Mac, though in a previous life, my setup on Linux was very similar
+summary: I'll describe my current LaTeX setup\: vim, skim, and latexmk. I currently write notes and papers using LaTeX on a Mac, though in a previous life, my setup on Linux was very similar
 ---
 
 I'll describe my current LaTeX setup: vim, skim, and latexmk.
