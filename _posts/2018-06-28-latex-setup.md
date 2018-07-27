@@ -7,10 +7,10 @@ tags:
 - productivity
 - tools
 - misc
-summary: I'll describe my current LaTeX setup\: vim, skim, and latexmk. I currently write notes and papers using LaTeX on a Mac, though in a previous life, my setup on Linux was very similar
+summary: I'll describe my current LaTeX setup -- vim, skim, and latexmk. I currently write notes and papers using LaTeX on a Mac, though in a previous life, my setup on Linux was very similar
 ---
 
-I'll describe my current LaTeX setup: vim, skim, and latexmk.
+I'll describe my current LaTeX setup -- vim, skim, and latexmk.
 I currently write notes and papers using LaTeX on a Mac, though in a previous life, my setup on Linux was very similar (i.e., ```s/macvim/gvim/g``` and ```s/skim/zathura/g```).
 I like being able to use my own customized text editor (with my favorite keyboard shortcuts) to edit a raw text file that I can then put under version control.
 Though I describe things with respect to vim, most of this setup can also
