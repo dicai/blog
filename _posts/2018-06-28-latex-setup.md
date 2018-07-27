@@ -66,7 +66,8 @@ left and the Skim on the right with the pdf open. After making edits, I'll press
 ```control-T``` to compile and the pdf will auto-refresh in Skim.
 
 <div align="center">
-<img src="{{site.baseurl}}/assets/latex-setup.png" align="center" width="700">
+<img src="{{site.baseurl}}/assets/latex-setup.png" align="center" width="700"
+alt="LaTeX Skim Vim Setup">
 <p>Example of macvim next to Skim setup. Monitor recommended :)</p>
 <br />
 </div>
