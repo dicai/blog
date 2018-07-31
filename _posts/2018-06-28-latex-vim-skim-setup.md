@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My LaTeX Setup -- using vim, Skim, and latexmk
+title: My LaTeX Setup - vim, Skim, and latexmk
 author: Diana Cai
 tags:
 - other
