@@ -122,11 +122,15 @@ some Googling, it seems that indeed these packages are not yet ready.
 As in the old package manager, we can still install unregistered packages by
 adding the URL directly, which is really nice for releasing your own research code for others to use.
 
+
+
 ## Final Thoughts
 
 While the Julia v1.0 upgrade was very exciting, because many packages that I
 rely on aren't yet 1.0-ready, I'm going to hold off on transitioning
 my research work and code to v1.0, and stick with v0.6 for a little longer.
 Supposedly the Julia developers will release a list of 1.0-ready packages soon.
-I plan to check back again in a month or so to see if packages I rely on are
+
+From perusing the Julia channel, it seems like many packages are become almost
+ready. I plan to check back again in a month or so to see if packages I rely on are
 ready for use. Overall, I'm thrilled that v1.0 is finally released, and look forward to using it soon.
