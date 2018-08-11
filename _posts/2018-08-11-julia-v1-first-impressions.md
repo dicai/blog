@@ -79,7 +79,7 @@ Pack3```. Typing ```help``` will display a list of commands. To return to the ``
 
 
 Now IJulia is installed. After starting up ```jupyter notebook``` and confirming
-that the v1.0.0 kernel was present, I then proceed to install my usual packages:
+that the v1.0.0 kernel was present, I then proceeded to install my usual packages:
 
 1. Distributions, StatsBase - for basic probabilistic modeling and statistics
 2. Seaborn (which installs all the Python dependencies) - plotting built on PyPlot (and PyCall to Matplotlib)
