@@ -51,7 +51,7 @@ user    0m0.114s
 sys     0m0.153s
 ```
 
-and for verions 0.6, we have
+and for version 0.6, we have
 
 ```bash
 ~ $ time /Applications/Julia-0.6.app/Contents/Resources/julia/bin/julia -e ""
