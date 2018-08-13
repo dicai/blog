@@ -5,6 +5,7 @@ author: Diana Cai
 tags:
 - Julia
 - programming
+- misc
 summary:  The Julia Programming Language has finally released version 1.0! I was still using version 0.6 when pretty much suddenly both v0.7 and v1.0 came out (thanks JuliaCon). So I didn't get to actually try out a lot of the new features until now. Here I'll document the installation process and some first impressions.
 ---
 
