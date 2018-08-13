@@ -117,12 +117,12 @@ the master branch on Github:
 This fixed the issue with both PyPlot and Seaborn immediately in that I could
 now import the packages.
 
-However, I wasn't able to get the plot function to actually work. After doing
-some Googling, it seems that indeed these packages are not yet ready.
+However, I wasn't able to get the plot function to actually work initially.
+After adding PyCall#master, I was able to get PyPlot and Seaborn
+both working in both the REPL and Jupyter notebooks.
 
 As in the old package manager, we can still install unregistered packages by
 adding the URL directly, which is really nice for releasing your own research code for others to use.
-
 
 
 ## Final Thoughts
