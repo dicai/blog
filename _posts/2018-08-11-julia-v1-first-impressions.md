@@ -76,7 +76,7 @@ prompt, e.g.,
 (v1.0) pkg> add IJulia
 ```
 Multiple packages can be installed in each line by specifying ```add Pack1 Pack2
-Pack3```. Typing ```help``` will display a list of commands. To return to the ```julia>``` prompt, press backspace on am empty prompt or Ctrl+C.
+Pack3```. Typing ```help``` will display a list of commands. To return to the ```julia>``` prompt, press backspace on an empty prompt or Ctrl+C.
 
 
 Now IJulia is installed. After starting up ```jupyter notebook``` and confirming
