@@ -46,6 +46,7 @@ for linear algebra computations today.
 
 Some problems where large linear systems that come up in practice include
 Kalman filters,  problems large covariance matrices (e.g., in genetics),
+large kernel matrices the size of the square of the number of data points,
 large regression problems, spectral methods for large graphs.
 
 
@@ -374,6 +375,7 @@ A[5,5] = 1
 
 Running the conjugate gradient, the algorithm terminates in 5 steps.
 We examine the error in the residual by computing the sum of the absolute residual components.
+Note that this is not the error in the solution but rather the error in the system.
 We see that the error drops sharply at 4 iterations, and then again in the 5th iteration.
 
 <div align="center">
