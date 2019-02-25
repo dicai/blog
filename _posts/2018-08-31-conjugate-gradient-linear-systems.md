@@ -104,7 +104,7 @@ Furthermore, define the residual at iterate \\(x_k\\) as \\(r_k := r(x_k)\\).
 
 The explicit step-size is given by
 
-\\[ \alpha_k = \frac{ r_k^\top \, p_k }{p_k \, A \, p_k}.\\]
+\\[ \alpha_k = -\frac{ r_k^\top \, p_k }{p_k \, A \, p_k}.\\]
 
 
 ### Properties of the conjugate directions algorithm
@@ -158,7 +158,7 @@ by \\(p_{k-1} A\\) and the condition that \\( p_{k-1}^\top A p_k = 0 \\).
 
 The final algorithm for conjugate gradient involves a few more simplifications.
 First, the step size can be simplified by recognizing that \\(r_k^\top p_i = 0\\) (from the expanding subspace minimization theorem),
-    and substituting \\(p_k = -r_{k-1} + \beta_{k-1} p_{k-1}\\) to get
+    and substituting \\(p_k = -r_{k} + \beta_{k} p_{k-1}\\) to get
 
 \\[\alpha_k = \frac{r_k^\top r_k}{p_k^\top A p_k}. \\]
 
