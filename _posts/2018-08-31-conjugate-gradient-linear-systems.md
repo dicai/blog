@@ -164,7 +164,7 @@ First, the step size can be simplified by recognizing that \\(r_k^\top p_i = 0\\
 
 Similarly, we can rewrite the scalar for the linear combination as
 
-\\[\beta_k = \frac{r_{k+1}^\top r_{k+1}}{r_k^\top r_k}. \\]
+\\[\beta_k = \frac{r_{k}^\top r_{k}}{r_{k-1}^\top r_{k-1}}. \\]
 
 To summarize, the algorithm is:
 
