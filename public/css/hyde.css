@@ -222,6 +222,15 @@ a.sidebar-nav-item:focus {
   color: #588A82;
 }
 
+/* My Theme Maroon */
+.theme-base-0-dc-maroon .sidebar {
+  background-color: #581845;
+}
+.theme-base-0-dc .content a,
+.theme-base-0-dc .related-posts li a:hover {
+  color: #581845;
+}
+
 /* Cyan */
 .theme-base-0c .sidebar {
   background-color: #75b5aa;

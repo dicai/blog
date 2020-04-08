@@ -67,16 +67,19 @@ body {
 
 /* No `:visited` state is required by default (browsers will use `a`) */
 a {
-  color: #268bd2;
+  /*color: #268bd2;*/
+  color: #581845; /* maroon */
   text-decoration: none;
 }
 a strong {
-  color: inherit;
+  /*color: inherit;*/
+  color: #581845; /* maroon */
 }
 /* `:focus` is linked to `:hover` for basic accessibility */
 a:hover,
 a:focus {
   text-decoration: underline;
+  color: #581845; /* maroon */
 }
 
 /* Headings */
@@ -338,7 +341,8 @@ tbody tr:nth-child(odd) th {
 .page-title,
 .post-title,
 .post-title a {
-  color: #303030;
+  /*color: #303030;*/
+  color: #581845; /* maroon */
 }
 .page-title,
 .post-title {
@@ -375,11 +379,13 @@ tbody tr:nth-child(odd) th {
   color: #999;
 }
 .related-posts li a:hover {
-  color: #268bd2;
-  text-decoration: none;
+  /*color: #268bd2; */
+  color: #581845; /* maroon */
+  text-decoration: underline;
 }
 .related-posts li a:hover small {
-  color: inherit;
+  /*color: inherit; */
+  color: #581845; /* maroon */
 }
 
 
