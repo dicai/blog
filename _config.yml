@@ -16,7 +16,7 @@ permalink:        pretty
 title:            'topics'
 tagline:          'Diana Cai'
 description:      'on machine learning, statistics, computer science, and research.'
-url:              http://dicai.github.io/
+url:              https://dicai.github.io/
 baseurl:          /blog
 
 author:
