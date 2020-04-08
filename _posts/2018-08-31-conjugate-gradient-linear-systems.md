@@ -280,7 +280,7 @@ Below is a Julia code snippet implementing a basic conjugate gradient algorithm.
 
 The inner loop iteration is:
 
-```julia
+{% highlight julia %}
 function iterate_CG(xk, rk, pk, A)
     """
     Basic iteration of the conjugate gradient algorithm
@@ -310,11 +310,11 @@ function iterate_CG(xk, rk, pk, A)
     return xk_new, rk_new, pk_new
 
 end
-```
+{% endhighlight %}
 
 The full algorithm is below:
 
-```julia
+{% highlight julia %}
 function run_conjugate_gradient(x0, A, b; max_iter = 2000)
     """
     Conjugate gradient algorithm
@@ -346,7 +346,7 @@ function run_conjugate_gradient(x0, A, b; max_iter = 2000)
 
     return xk
 end
-```
+{% endhighlight %}
 
 ## Examples
 
@@ -364,14 +364,14 @@ problem) due to numerical errors.
 In our first example, we construct a 5x5 diagonal matrix with 3 eigenvalues
 around 10, 1 eigenvalue equal to 2, and 1 equal to 1:
 
-```julia
+{% highlight julia %}
 A = zeros(5,5)
 A[1,1] = 10
 A[2,2] = 10.1
 A[3,3] = 10.2
 A[4,4] = 2
 A[5,5] = 1
-```
+{% endhighlight %}
 
 Running the conjugate gradient, the algorithm terminates in 5 steps.
 We examine the error in the residual by computing the sum of the absolute residual components.
@@ -389,13 +389,14 @@ We see that the error drops sharply at 4 iterations, and then again in the 5th i
 
 In our next example, we construct a 5x5 random s.p.d. matrix:
 
-```julia
+{% highlight julia %}
 A = rand(5,5)
 A = 0.5*(A+A')
 A = A + 5*I
-```
+{% endhighlight %}
+
 with, in this particular instance, eigenvalues
-```julia
+{% highlight julia %}
 > eigvals(A)
 
 5-element Array{Float64,1}:
@@ -404,7 +405,7 @@ with, in this particular instance, eigenvalues
  5.2165679905921785
  5.56276039133931
  7.909981699390226
-```
+{% endhighlight %}
 
 
 
@@ -423,20 +424,20 @@ tolerance.
 
 Next, we examine a matrix of dimension 1000, and generate a random s.p.d matrix.
 
-```julia
+{% highlight julia %}
 A = rand(N,N)
 A = 0.5*(A+A')
 A = A + 50*I
-```
+{% endhighlight %}
 
 Note that in the above snippet, the last line adds a large term to the diagonal,
      making the matrix "more nonsingular." The condition number is:
 
-```julia
+{% highlight julia %}
 > cond(A)
 
 14.832223763483976
-```
+{% endhighlight %}
 
 The general rule of thumb is that we lose about 1 digit of accuracy with
 condition numbers on this order.
@@ -456,19 +457,20 @@ Now we examine a matrix again of size 1000 but this time with a smaller
 multiplier on the diagonal (here we picked the smallest integer value such that the
 eigenvalues of the resulting matrix were all nonnegative):
 
-```julia
+{% highlight julia %}
 A = rand(N,N)
 A = 0.5*(A+A')
 A = A + 13*I
-```
+{% endhighlight %}
 
 The condition number is much larger than the previous case, almost at \\(10^3\\):
 
-```julia
+{% highlight julia %}
 > cond(A)
 
 2054.8953570922145
-```
+{% endhighlight %}
+
 The error plot is below:
 
 <div align="center">

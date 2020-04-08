@@ -36,10 +36,9 @@ beginning of the document, which is quite cumbersome if you'd just edited text o
 In vim, I have several keybindings set up in my .vimrc file.
 Currently, I compile the .tex file using [latexmk](http://mg.readthedocs.io/latexmk.html).
 Files can be compiled to pdf with the command
-
-```bash
+{% highlight bash %}
 latexmk -pdf [file]
-```
+{% endhighlight %}
 
 In latexmk, you can also automatically recompile the tex when needed, but I prefer to manually compile the tex.
 
@@ -52,9 +51,9 @@ I have the following key bindings in vim:
 For instance, the compile keybinding above is done by adding the following line
 to the .vimrc file
 
-```vim
+{% highlight vim %}
 autocmd FileType tex nmap <buffer> <C-T> :!latexmk -pdf %<CR>
-```
+{% endhighlight %}
 
 These types of key bindings can usually be setup with other text editors as well.
 
@@ -84,12 +83,12 @@ allows me to allows me to autocomplete the parts of LaTeX that I don't want to
 spend time typing but use often. For instance, in the TeX below, snippets means
 I only have to type ```align*``` once.
 
-```tex
+{% highlight tex %}
 \begin{align*}
     \pi(\theta | x) = \frac{\pi(\theta) p(x | \theta)}
                            {\int \pi(\theta) p(x | \theta) d\theta}
 \end{align*}
-```
+{% endhighlight %}
 
 And should I need to change ```align*``` to just ```align```, I only have to
 edit this in one of the parens instead of in both lines.
@@ -97,9 +96,9 @@ edit this in one of the parens instead of in both lines.
 To use [vim plugins](https://github.com/VundleVim/Vundle.vim) (after installing), you just need to add the github page to your .vimrc file, e.g., for
 [Ultisnips](https://github.com/SirVer/ultisnips), add the line
 
-```vim
+{% highlight vim %}
 Plugin 'SirVer/ultisnips'
-```
+{% endhighlight %}
 
 and execute ```:PluginInstall``` while in command mode in vim.
 
@@ -109,7 +108,7 @@ start a new vim document, i.e., when executing ```vim notes.tex``` in the
 command line, a fully-functional tex skeleton with all the packages I normally use and font styles are
 automatically loaded. E.g., a version of the following:
 
-```tex
+{% highlight tex %}
 \documentclass[11pt]{article}
 
 \usepackage{amsmath, amssymb, amsthm, bbm}
@@ -123,8 +122,7 @@ automatically loaded. E.g., a version of the following:
 \maketitle
 
 \end{document}
-
-```
+{% endhighlight %}
 
 ### subfiles
 
