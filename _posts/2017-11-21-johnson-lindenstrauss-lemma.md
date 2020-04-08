@@ -80,7 +80,7 @@ do using a Chernoff bound. In particular, consider the two cases of
 $$||u||_2^2 > (1 + \delta) \mu$$ and $$||u||_2^2 < (1 - \delta) \mu$$.
 Via a Chernoff bound, the probability of at least one of these two "bad" events occurring is upper bounded by
 \\[
-    \Pr[\\{ ||u||^2 > (1+\delta) \mu)\\} \lor \\{||u||^2 > (1-\delta) \mu \\}]  < \exp(-c \delta^2 k),
+    \Pr[\\{ ||u||^2 > (1+\delta) \mu)\\} \lor \\{||u||^2 > (1-\delta) \mu \\}]  < 2\exp(-c \delta^2 k),
 \\]
 for some $$c > 0$$.
 
