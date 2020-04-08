@@ -6,7 +6,7 @@ tags:
 - statistics
 - machinelearning
 - numerics
-summary:
+summary: Probabilistic numerical methods have seen a recent surge of interest. However, the methods date back to many key contributions made in the 60s-80s. The goal here is to collect a relevant, organized reading list here. I hope to update
 ---
 
 *(Last updated: 04/08/2020)*
