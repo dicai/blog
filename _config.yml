@@ -4,9 +4,10 @@ markdown:         kramdown
 highlighter:      rouge
 
 # plugins
-gems: [jekyll-paginate]
+#gems: [jekyll-paginate]
 plugins:
     - jekyll-seo-tag
+    - jekyll-paginate
 
 # Permalinks
 permalink:        pretty
