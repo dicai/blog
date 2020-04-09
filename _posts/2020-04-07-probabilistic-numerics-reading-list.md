@@ -67,9 +67,6 @@ foundations in probabilistic numerics, which mostly focused on the problem of in
 For lack of a better title, here we collect more recent papers on probabilistic numerics, focusing on
 general overviews, rather than specific methods (to be added later).
 
-0. Kennedy, M., O'Hagan, A. (2002). [Bayesian calibration of computer models](https://rss.onlinelibrary.wiley.com/doi/epdf/10.1111/1467-9868.00294). Journal of the
-   Royal Statistical Society Series B, 63(3), 425-464.
-
 1. Cockayne, J., Oates, C., Sullivan, T., & Girolami, M. (2017). [Bayesian
    Probabilistic Numerical Methods](https://arxiv.org/abs/1702.03673). ArXiv e-Prints, stat.ME 1702.03673.
 
