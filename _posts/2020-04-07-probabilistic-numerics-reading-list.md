@@ -23,8 +23,8 @@ The [Probabilistic Numerics Website](http://probabilistic-numerics.org/literatur
 
 Here are recent surveys that collect a lot of the literature and developments in the field as well as open problems the authors believe are important to tackle.
 
-1. Hennig, P., Osborne, M. A., & Girolami, M. (2015). Probabilistic numerics and
-   uncertainty in computations. Proceedings of the Royal Society of London A:
+1. Hennig, P., Osborne, M. A., & Girolami, M. (2015). [Probabilistic numerics and
+   uncertainty in computations.](https://arxiv.org/pdf/1506.01326.pdf) Proceedings of the Royal Society of London A:
    Mathematical, Physical and Engineering Sciences, 471(2179).
 
 2. Oates, C. J., & Sullivan, T. J. (2019). [A Modern Retrospective on
