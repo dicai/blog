@@ -9,7 +9,7 @@ tags:
 summary: Probabilistic numerical methods have seen a recent surge of interest. However, the methods date back to many key contributions made in the 60s-80s. The goal here is to collect a relevant, organized reading list here. I hope to update
 ---
 
-*(Last updated: 04/08/2020)*
+*(Last updated: 04/10/2020)*
 
 Probabilistic numerical methods have experienced a recent surge of interest. However,
 the literature of many key contributions date back to 60s-80s, a period before
@@ -76,6 +76,15 @@ general overviews, rather than specific methods (to be added later).
    e-Prints, 1901.04326.
 
 
+# Probabilistic linear solvers
+
+These papers propose probabilistic methods for solving linear systems $$Ax=b$$, where generally a prior is placed on either the unknown quantity $$A^{-1}$$ or $$A^{-1}b$$, and posterior point estimates often have an explicit relationship with classical itereates obtained from iterative algorithms, such as the [conjugate gradient method](https://www.dianacai.com/blog/2018/08/31/conjugate-gradient-linear-systems/).
+
+1. Hennig, P. (2015). [Probabilistic Interpretation of Linear Solvers.](https://epubs.siam.org/doi/abs/10.1137/140955501) SIAM J on Optimization, 25(1).
+
+2. Cockayne, J., Oates, C., & Girolami, M. (2018). [A Bayesian Conjugate Gradient Method.](https://projecteuclid.org/euclid.ba/1558144846) Bayesian Analysis, 14(23), 937--1012.
+
+3. Bartels, S., Cockayne, J., Ipsen, I., & Hennig, P. [Probabilistic linear solvers: a unifying view.](https://link.springer.com/article/10.1007/s11222-019-09897-7) Statistics and Computing, 29(6), 1249--1263.
 
 
 
