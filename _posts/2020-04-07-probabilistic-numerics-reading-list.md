@@ -55,7 +55,7 @@ foundations in probabilistic numerics, which mostly focused on the problem of in
    in computer science: A Bayesian view. In Bayesian Statistics 2, Proceedings
    of the Second Valencia International Meeting (pp. 361–374).
 
-1. Wozniakowski, H. A survey of information-based complexity. J. Complexity,
+1. Wozniakowski, H. [A survey of information-based complexity](https://www.sciencedirect.com/science/article/pii/0885064X85900202). J. Complexity,
    1(1):11–44, 1985.
 
 2. Diaconis, P. (1988). [Bayesian numerical analysis](http://probabilistic-numerics.org/assets/pdf/Diaconis_1988.pdf). Statistical Decision Theory
@@ -65,7 +65,9 @@ foundations in probabilistic numerics, which mostly focused on the problem of in
 # Recent papers on probabilistic numerics
 
 For lack of a better title, here we collect more recent papers on probabilistic numerics, focusing on
-general overviews, rather than specific methods (to be added later).
+general overviews, rather than specific numerical methods.
+
+##  Decision-theoretic views on probabilistic numerics
 
 1. Cockayne, J., Oates, C., Sullivan, T., & Girolami, M. (2017). [Bayesian
    Probabilistic Numerical Methods](https://arxiv.org/abs/1702.03673). ArXiv e-Prints, stat.ME 1702.03673.
@@ -75,6 +77,10 @@ general overviews, rather than specific methods (to be added later).
    Methods](https://arxiv.org/pdf/1901.04326.pdf). ArXiv
    e-Prints, 1901.04326.
 
+3. Owhadi, H., & Scovel, C. (2017). [Universal Scalable Robust Solvers from
+   Computational Information Games and fast eigenspace adapted Multiresolution
+   Analysis.](http://arxiv.org/abs/1703.10761)
+   ArXiv:1703.10761 [Math, Stat].
 
 # Probabilistic linear solvers
 
@@ -85,6 +91,11 @@ These papers propose probabilistic methods for solving linear systems $$Ax=b$$, 
 2. Cockayne, J., Oates, C., & Girolami, M. (2018). [A Bayesian Conjugate Gradient Method.](https://projecteuclid.org/euclid.ba/1558144846) Bayesian Analysis, 14(23), 937--1012.
 
 3. Bartels, S., Cockayne, J., Ipsen, I., & Hennig, P. [Probabilistic linear solvers: a unifying view.](https://link.springer.com/article/10.1007/s11222-019-09897-7) Statistics and Computing, 29(6), 1249--1263.
+
+
+# Applications
+
+1. Bartels, S., Hennig, P (2016). Probabilistic Approximate Least Squares. AISTATS, PMLR 51, 676-684.
 
 
 
