@@ -51,6 +51,9 @@ foundations in probabilistic numerics, which mostly focused on the problem of in
 1. Larkin, F. M. (1972). Gaussian measure in Hilbert space and applications in
    numerical analysis. Rocky Mountain Journal of Mathematics, 2(3), 379–422.
 
+1.  Micchelli C. A., & Rivlin T. J. A survey of optimal recovery. Optimal Estimation in
+    Approximation Theory. Springer, 1977, 1–54.
+
 1. Kadane, J. B., & Wasilkowski, G. W. (1985). Average case epsilon-complexity
    in computer science: A Bayesian view. In Bayesian Statistics 2, Proceedings
    of the Second Valencia International Meeting (pp. 361–374).
