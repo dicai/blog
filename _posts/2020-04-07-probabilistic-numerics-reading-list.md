@@ -85,7 +85,7 @@ general overviews, rather than specific numerical methods.
    Analysis.](http://arxiv.org/abs/1703.10761)
    ArXiv:1703.10761 [Math, Stat].
 
-4. Owhadi, H., Scovel, C., & Schafer, F. [Statistical Numerical
+4. Owhadi, H., Scovel, C., & Schafer, F (2019). [Statistical Numerical
    Approximation.](https://pdfs.semanticscholar.org/6fd4/f6c23c84e902572bd5b6ae1f652f4ac2598d.pdf).
    Notices of the American Mathematical Society, 66(10).
 
@@ -103,7 +103,7 @@ These papers propose probabilistic methods for solving linear systems $$Ax=b$$, 
 
 In addition to the historical papers above, there are a lot of recent papers on probabilistic integration.
 
-1. Xie, X., Briol, F., & Girolami, M. [Bayesian Quadrature for Multiple Related Integrals](https://arxiv.org/abs/1801.04153) (2018).
+1. Xie, X., Briol, F., & Girolami, M (2018). [Bayesian Quadrature for Multiple Related Integrals](https://arxiv.org/abs/1801.04153).
     ICML, PMLR 80:5369-5378.
 
 # Applications
