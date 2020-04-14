@@ -99,6 +99,12 @@ These papers propose probabilistic methods for solving linear systems $$Ax=b$$, 
 
 3. Bartels, S., Cockayne, J., Ipsen, I., & Hennig, P. [Probabilistic linear solvers: a unifying view.](https://link.springer.com/article/10.1007/s11222-019-09897-7) Statistics and Computing, 29(6), 1249--1263.
 
+# Probabilistic integration
+
+In addition to the historical papers above, there are a lot of recent papers on probabilistic integration.
+
+1. Xie, X., Briol, F., & Girolami, M. [Bayesian Quadrature for Multiple Related Integrals](https://arxiv.org/abs/1801.04153) (2018).
+    ICML, PMLR 80:5369-5378.
 
 # Applications
 
