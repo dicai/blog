@@ -208,6 +208,8 @@ Specific working models can be found in the [Flux model zoo](https://github.com/
 
 Overall, I found Flux easy to use, especially if you've used something like PyTorch before. I liked how it felt very well-integrated with the Julia language -- it really felt like just coding in Julia, rather than having to learn a whole new framework.
 One thing I think could be better supported is the documentation -- I found that it was good enough to get started and learn the functionality of Flux, but for instance, some basic docstrings for important functions were missing.
-
+But, as they state on their [home page](https://fluxml.ai/Flux.jl/stable/), "you could have written flux" -- i.e., the source code is all straightforward Julia code.
+Thus, you can easily read the source to get a better idea of the functionality. For instance, the ```loss_gradient``` wrapper above was super simple to add after reading the source code for the ```gradient function```.
+I think this leads to exciting opportunities to contribute and join the [Flux community](https://fluxml.ai/Flux.jl/v0.10/community/).
 
 
