@@ -32,7 +32,7 @@ Here we assume basic familiarity with Julia syntax. Recall that ```*``` can be u
 # Simple gradients and autodiff
 
 The ```gradient``` function is part of [Zygote](https://github.com/FluxML/Zygote.jl) -- Flux's autodiff system -- and can be overloaded in several ways.
-One of the simplest uses of gradient is to pass in a function and the arguments that you want to take the derivate with respect to.
+One of the simplest uses of gradient is to pass in a function and the arguments that you want to take the derivative with respect to.
 
 {% highlight julia %}
 using Flux
