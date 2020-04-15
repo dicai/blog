@@ -79,6 +79,8 @@ end
 Here the model (i.e., predict function) only comes in to the loss function and isn't needed directly otherwise.
 
 {% highlight julia %}
+using Flux.Optimise: update!
+
 # Generate some data
 N_samps = 10
 x, y = generate_data(N_samps)
