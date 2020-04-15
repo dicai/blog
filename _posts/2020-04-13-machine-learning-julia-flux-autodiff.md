@@ -125,6 +125,28 @@ For instance, we could have used ADAM by specifying:
 optimizer = ADAM(0.05)
 {% endhighlight %}
 
+### A note on getting loss values and gradients
+
+In many cases, you might want to save the loss so that you can plot the
+progress. In the above example, we recompute the loss, but you could also get it
+directly when you compute the gradient. This can be done by using the
+```pullback``` function.
+
+Below is a wrapper around ```pullback``` that returns the loss and the gradient,
+    which is based on the [code of the gradient function](https://github.com/FluxML/Zygote.jl/blob/master/src/compiler/interface.jl#L43).
+
+{% highlight julia %}
+function loss_gradient(f, args...)
+    y, back = Flux.pullback(f, args...)
+    return y, back(one(y))
+end
+{% endhighlight %}
+
+Thus, in the code above, we could have instead written
+{% highlight julia %}
+ls, grads = loss_gradient(() -> loss(x[i], y[i]), params(W, b))
+{% endhighlight %}
+to get both the value of the loss and the gradient.
 
 ## Flux's train function
 
