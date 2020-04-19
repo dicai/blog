@@ -9,7 +9,7 @@ tags:
 summary: Probabilistic numerical methods have seen a recent surge of interest. However, the methods date back to many key contributions made in the 60s-80s. The goal here is to collect a relevant, organized reading list here. I hope to update
 ---
 
-*(Last updated: 04/10/2020)*
+*(Last updated: 04/19/2020)*
 
 Probabilistic numerical methods have experienced a recent surge of interest. However,
 the literature of many key contributions date back to 60s-80s, a period before
@@ -63,6 +63,20 @@ foundations in probabilistic numerics, which mostly focused on the problem of in
 
 2. Diaconis, P. (1988). [Bayesian numerical analysis](http://probabilistic-numerics.org/assets/pdf/Diaconis_1988.pdf). Statistical Decision Theory
    and Related Topics IV, 1, 163–175.
+   <details>
+   <summary>Notes</summary>
+   A note on the quadrature problem, i.e., estimating the integral \(\int_0^1 f(x) dx\)
+   by considering a prior on \(f\), computing a posterior on \(f\) conditioned
+   on information at a finite number of points \(f(t_1),\ldots,f(t_n)\), and
+   then estimating the integral using the Bayes decision rule.
+   Example: when using Brownian motion as a prior, the conditional expectation
+   yields the classical trapezoidal rule for quadrature.
+   Considers the problem of taking classical numerical procedures and seeing if
+   they correspond to optimal decision rules (e.g., Bayes, minimax or admissible).
+   In addition to a posterior distribution, the Bayesian approach also yields a clear approach to the
+   design problem: i.e., how do we choose the information so that we get the best estimate of the integral?
+   Discussion on priors that lead to linear interpolation, historical developments, recent applications, and connections with Stein estimation and consistency.
+   </details>
 
 
 # Recent papers on probabilistic numerics
@@ -86,7 +100,7 @@ general overviews, rather than specific numerical methods.
    ArXiv:1703.10761 [Math, Stat].
 
 4. Owhadi, H., Scovel, C., & Schafer, F (2019). [Statistical Numerical
-   Approximation.](https://pdfs.semanticscholar.org/6fd4/f6c23c84e902572bd5b6ae1f652f4ac2598d.pdf).
+   Approximation](https://pdfs.semanticscholar.org/6fd4/f6c23c84e902572bd5b6ae1f652f4ac2598d.pdf).
    Notices of the American Mathematical Society, 66(10).
 
 # Probabilistic linear solvers
