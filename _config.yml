@@ -31,6 +31,6 @@ pages_list:
     all: '/blog/allposts'
     archive: '/blog/archive'
     compsci: '/blog/compsci'
-    ml + stats: '/blog/mlstat'
+    mlstats: '/blog/mlstat'
     other: '/blog/other'
 #feed: '/atom.xml'
