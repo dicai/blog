@@ -1,6 +1,6 @@
 ---
 layout: page
-title: other
+title: other topics
 ---
 
 ## other posts

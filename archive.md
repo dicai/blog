@@ -3,17 +3,30 @@ layout: page
 title: by topic
 ---
 
-## blog archive
+## blog archive, by topic
 
 ---
 
 ## specific areas
+
+Posts on specific research areas or topics.
 
 ### \#nonparametricBayes
 
 {% for post in site.posts %}
   {% for tag in post.tags %}
     {% if tag == "nonparametricbayes" %}
+  * {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ site.baseurl }}{{ post.url }})
+    {% break %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
+### \#numerics and \#probabilisticnumerics
+
+{% for post in site.posts %}
+  {% for tag in post.tags %}
+    {% if tag == "numerics" %}
   * {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ site.baseurl }}{{ post.url }})
     {% break %}
     {% endif %}
@@ -31,11 +44,21 @@ title: by topic
   {% endfor %}
 {% endfor %}
 
+### \#julia
+
+{% for post in site.posts %}
+  {% for tag in post.tags %}
+    {% if tag == "julia" %}
+  * {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ site.baseurl }}{{ post.url }})
+    {% break %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
 ---
 
 ## general topics
 
-
+Posts organized broadly by general topic areas.
 
 ### \#statistics and \#machinelearning
 

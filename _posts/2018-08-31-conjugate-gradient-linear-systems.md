@@ -6,6 +6,7 @@ tags:
 - optimization
 - machinelearning
 - julia
+- numerics
 summary: In this post, we discuss solving large linear systems with the conjugate gradient iterative algorithm.
 ---
 
