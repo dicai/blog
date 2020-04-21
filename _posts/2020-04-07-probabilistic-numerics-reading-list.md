@@ -122,7 +122,12 @@ In addition to the historical papers above, there are a lot of recent papers on 
 
 # Applications
 
-1. Bartels, S., Hennig, P (2016). Probabilistic Approximate Least Squares. AISTATS, PMLR 51, 676-684.
+1. Bartels, S., Hennig, P (2016). [Probabilistic Approximate Least Squares](http://proceedings.mlr.press/v51/bartels16.html). AISTATS, PMLR 51, 676-684.
+
+1. Garnett, R., Orborne, M.A., Reece, S., Rogers, A., Roberts, S.J. (2010).
+   [Sequential Bayesian Prediction in the Presence of Changepoints and
+   Faults](https://www.cse.wustl.edu/~garnett/files/papers/garnett_et_al_cj_2010.pdf).
+   The Computer Journal, 53(9), 1430-1446.
 
 
 
