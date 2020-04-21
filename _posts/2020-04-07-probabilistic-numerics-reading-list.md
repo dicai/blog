@@ -103,6 +103,9 @@ general overviews, rather than specific numerical methods.
    Approximation](https://pdfs.semanticscholar.org/6fd4/f6c23c84e902572bd5b6ae1f652f4ac2598d.pdf).
    Notices of the American Mathematical Society, 66(10).
 
+5. Owhadi, H., & Scovel, C. (2017). [Towards Machine Wald](https://arxiv.org/abs/1508.02449). Handbook of
+   Uncertainty Quantification, pp. 157-191. Springer.
+
 # Probabilistic linear solvers
 
 These papers propose probabilistic methods for solving linear systems $$Ax=b$$, where generally a prior is placed on either the unknown quantity $$A^{-1}$$ or $$A^{-1}b$$, and posterior point estimates often have an explicit relationship with classical itereates obtained from iterative algorithms, such as the [conjugate gradient method](https://www.dianacai.com/blog/2018/08/31/conjugate-gradient-linear-systems/).
