@@ -94,6 +94,9 @@ general overviews, rather than specific numerical methods.
    Methods](https://arxiv.org/pdf/1901.04326.pdf). ArXiv
    e-Prints, 1901.04326.
 
+5. Owhadi, H., & Scovel, C. (2017). [Towards Machine Wald](https://arxiv.org/abs/1508.02449). Handbook of
+   Uncertainty Quantification, pp. 157-191. Springer.
+
 3. Owhadi, H., & Scovel, C. (2017). [Universal Scalable Robust Solvers from
    Computational Information Games and fast eigenspace adapted Multiresolution
    Analysis.](http://arxiv.org/abs/1703.10761)
@@ -102,9 +105,6 @@ general overviews, rather than specific numerical methods.
 4. Owhadi, H., Scovel, C., & Schafer, F (2019). [Statistical Numerical
    Approximation](https://pdfs.semanticscholar.org/6fd4/f6c23c84e902572bd5b6ae1f652f4ac2598d.pdf).
    Notices of the American Mathematical Society, 66(10).
-
-5. Owhadi, H., & Scovel, C. (2017). [Towards Machine Wald](https://arxiv.org/abs/1508.02449). Handbook of
-   Uncertainty Quantification, pp. 157-191. Springer.
 
 # Probabilistic linear solvers
 
