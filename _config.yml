@@ -6,8 +6,8 @@ highlighter:      rouge
 # plugins
 #gems: [jekyll-paginate]
 plugins:
-    - jekyll-seo-tag
-    - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-paginate
 
 # Permalinks
 permalink:        pretty
