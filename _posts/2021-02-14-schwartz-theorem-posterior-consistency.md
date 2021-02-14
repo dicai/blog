@@ -715,7 +715,7 @@ But for strong consistency with respect to the L1 metric, uniformly consistent t
 not exist (LeCam, 1973 [4]; Barron, 1989 [5]).
 
 However, it is still possible to get strong posterior consistency via an
-extension of Schwartz's theorem. Barron (1999) [6] proved a early result on this,
+extension of Schwartz's theorem. Barron (1988) [6] proved a early result on this,
 and Ghosal and van der Vaart, Theorem 6.17 (2017) [1] presents an extended Schwartz theorem
 that can be used to recover the classical Schwartz theorem as well as other
 consistency results based on metric entropy that are useful for proving, e.g., L1 consistency.
@@ -753,5 +753,7 @@ as priors that vary with the data, misspecified models, and non i.i.d. models.
 5. Barron (1989). Uniformly powerful goodness of fit tests. _Annals of
    Statistics_, 17(1):107--124.
 
-6. Barron (1999). Information-theoretic characterization of Bayes performance
-   and the choice of priors in parametric and nonparametric problems. _Bayesian Statistics_, 6:27--52.
+6. Barron (1988). The exponential convergence of posterior probabilities with implications
+for Bayes estimators of density functions. _Technical Report_ 7, Dept. Statistics, Univ.
+Illinois, Champaign.
+
