@@ -68,9 +68,9 @@ foundations in probabilistic numerics, which mostly focused on the problem of in
    <summary style="color:maroon;font-size:14pt">_(Additional notes)_
    </summary>
 
-   A note on the quadrature problem, i.e., estimating the integral \(\int_0^1 f(x) dx\)
-   by considering a prior on \(f\), computing a posterior on \(f\) conditioned
-   on information at a finite number of points \(f(t_1),\ldots,f(t_n)\), and
+   A note on the quadrature problem, i.e., estimating the integral \\(\int_0^1 f(x) dx\\)
+   by considering a prior on \\(f\\), computing a posterior on \\(f\\) conditioned
+   on information at a finite number of points \\(f(t_1),\ldots,f(t_n)\\), and
    then estimating the integral using the Bayes decision rule.
    Example: when using Brownian motion as a prior, the conditional expectation
    yields the classical trapezoidal rule for quadrature.

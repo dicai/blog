@@ -7,7 +7,7 @@ tags:
 - probability
 - nonparametricBayes
 - Bayesian
-summary: A primer on posterior consistency.
+summary: In a 1965 paper "On Bayes procedures", [Lorraine Schwartz](https://www.stat.ubc.ca/lorraine-schwartz-prize) proved a seminal result on posterior consistency, which has been instrumental in the development of rich suite of tools for analyzing frequentist consistency of Bayesian methods. Under mild regularity conditions on the prior, Schwartz's theorem leads directly to posterior consistency with respect to the weak topology.
 ---
 
 In a 1965 paper "On Bayes procedures" [3],
