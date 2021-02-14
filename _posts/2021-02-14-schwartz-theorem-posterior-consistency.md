@@ -643,7 +643,7 @@ The existence of a uniformly sequence of tests is used to show that
 
 $$\begin{align}
     \lim_{n\rightarrow \infty}~ e^{n\beta_0}
-    \int_{U^c} \prod_{i=1}^n \frac{p(X_i)}{p_0(X_i)} \,d\Pi(p) =0
+    (1-\phi_n) \int_{U^c} \prod_{i=1}^n \frac{p(X_i)}{p_0(X_i)} \,d\Pi(p) =0
     \quad P_0^{(n)} \text{-a.s.}
 \end{align}$$
 
