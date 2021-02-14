@@ -459,21 +459,27 @@ A = \left\\{ p \in \mathcal{P}:  \int g(x) \, p(x) \, d\mu(x) < \int g(x) \, p_0
 Consider the test function
 
 \\[
-    \phi_n(X_1,\ldots,X_n) = I\left\\{\frac{1}{n}\sum_{i=1}^n g(X_i) > \int g(x) \, p_0(x) \, d\mu(x) \right\\}.
+    \phi_n(X_1,\ldots,X_n) = I\left\\{\frac{1}{n}\sum_{i=1}^n g(X_i) > \int g(x) \, p_0(x) \, d\mu(x) + \epsilon/2 \right\\}.
 \\]
 
 Then the expectation of this test function can be bounded via [Hoeffding's inequality](https://en.wikipedia.org/wiki/Hoeffding%27s_inequality#General_case_of_bounded_random_variables):
-that is, since \\(g\\) is a bounded function,
+that is, since \\(g\\) is a bounded function (and w.l.o.g. can be rescaled such
+        that \\(0 \leq g \leq 1\\)),
 
 \\[
-        P_0^{(n)} \phi_n = P_0^{(n)}\left(\frac{1}{n}\sum_{i=1}^n g(X_i) > \int g(x) \, p_0(x)\, d\mu(x)\right)
-        \leq e^{-n\epsilon^2/2},
-\\]
-and similarly, for any \\(P \in A^c \\),
-\\[
-        P^{(n)}(1-\phi_n) = P^{(n)}\left(-\frac{1}{n}\sum_{i=1}^n g(X_i) > -\int g(x) \, p_0(x)\, d\mu(x)\right)
+        P_0^{(n)} \phi_n = P_0^{(n)}\left(\frac{1}{n}\sum_{i=1}^n g(X_i) > \int g(x) \, p_0(x)\, d\mu(x) + \epsilon/2  \right)
         \leq e^{-n\epsilon^2/2}.
 \\]
+
+Similarly, for any \\(P \in A^c \\),
+\\[
+        P^{(n)}(1-\phi_n)
+        \leq P^{(n)}\left(-\frac{1}{n}\sum_{i=1}^n g(X_i) > -\int g(x) \, p(x)\, d\mu(x) + \epsilon/2  \right)
+        \leq e^{-n\epsilon^2/2}.
+\\]
+<!-- where the first inequality holds because
+    for any \\(P \in A^c \\),    \\( - \int g dP < - \int g dP_0\\).
+-->
 
 
 Thus, in order to guarantee weak posterior consistency holds, we only need to
