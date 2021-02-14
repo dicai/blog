@@ -397,7 +397,7 @@ V = \left\\{ p \in \mathcal{P}: \forall i \in \\{1,\ldots,k\\}, \left| \int g_i 
 \\]
 
 where for all \\(i\\), \\(g_i\\) is a bounded, real-valued, continuous function on
-\\(\mathbb{X}\\), and \\(k \in \mathbb{N}\\).
+\\(\mathbb{X}\\), \\(\epsilon_i > 0\\), and \\(k \in \mathbb{N}\\).
 
 Note that each basis element \\(V\\) can be expressed as a finite intersection of
 subbasis elements, or subsets of the form
@@ -406,19 +406,19 @@ subbasis elements, or subsets of the form
 V_i = \left\\{ p \in \mathcal{P}: \left| \int g_i p d\mu - \int g_i p_0 d\mu \right| < \epsilon_i \right\\},
 \\]
 
-which is an intersection between the sets
+which is an intersection between two sets of the form:
 
 \\[
-A_i = \left\\{ p \in \mathcal{P}:  \int g_i p d\mu < \int g_i p_0 d\mu + \epsilon_i \right\\}
+A_i = \left\\{ p \in \mathcal{P}:  \int g_i p d\mu < \int g_i p_0 d\mu + \epsilon_i \right\\}.
 \\]
 
-and
-
+<!--and
 \\[
 B_i = \left\\{ p \in \mathcal{P}:  \int g_i p d\mu > \int g_i p_0 d\mu - \epsilon_i \right\\}.
 \\]
+-->
 
-Thus, the complement \\(V^c = \bigcup_i V_i^c = \bigcup_i (A_i^c \cup B_i^c) \\) is then a finite union of the subbasis elements
+Thus, the complement \\(V^c = \bigcup_i A_i^c \\) is then a finite union of the subbasis elements
 above.
 
 Since \\(V \subset U\\) by construction, we can decompose the posterior
@@ -431,7 +431,7 @@ $$
 \leq
 \Pi(V^c | X_{1:n})
 \leq
-\sum_{i=1}^k \Pi(A_i^c | X_{1:n}) + \Pi(B_i^c | X_{1:n}).
+\sum_{i=1}^{2k} \Pi(A_i^c | X_{1:n}).
 \end{align}
 $$
 
@@ -440,7 +440,7 @@ Thus, in order to prove that \\(\Pi(U^c | X_{1:n}) \rightarrow 0,
 (P_0^{(n)}\text{-a.s.})\\) as \\(n \rightarrow \infty\\),
 it suffices to show that the probability of the subbasis set complements vanish almost surely, i.e.,
 for all \\(i\\),
-\\(\Pi(A_i^c | X_{1:n}) \rightarrow 0\\)  and \\(\Pi(B_i^c | X_{1:n}) \rightarrow 0 \\) a.s.
+\\(\Pi(A_i^c | X_{1:n}) \rightarrow 0\\) a.s.
 
 That is, we only have to verify the testing condition on these subbasis sets.
 
