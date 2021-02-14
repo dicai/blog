@@ -6,6 +6,7 @@ tags:
 - statistics
 - machinelearning
 - numerics
+- references
 summary: Probabilistic numerical methods have seen a recent surge of interest. However, the methods date back to many key contributions made in the 60s-80s. The goal here is to collect a relevant, organized reading list here. I hope to update
 ---
 
@@ -64,7 +65,9 @@ foundations in probabilistic numerics, which mostly focused on the problem of in
 2. Diaconis, P. (1988). [Bayesian numerical analysis](http://probabilistic-numerics.org/assets/pdf/Diaconis_1988.pdf). Statistical Decision Theory
    and Related Topics IV, 1, 163–175.
    <details>
-   <summary>Notes</summary>
+   <summary style="color:maroon;font-size:14pt">_(Additional notes)_
+   </summary>
+
    A note on the quadrature problem, i.e., estimating the integral \(\int_0^1 f(x) dx\)
    by considering a prior on \(f\), computing a posterior on \(f\) conditioned
    on information at a finite number of points \(f(t_1),\ldots,f(t_n)\), and
