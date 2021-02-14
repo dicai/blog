@@ -438,9 +438,9 @@ $$
 
 Thus, in order to prove that \\(\Pi(U^c | X_{1:n}) \rightarrow 0,
 (P_0^{(n)}\text{-a.s.})\\) as \\(n \rightarrow \infty\\),
-it suffices to show that the probability of the subbasis set complements vanish, i.e.,
+it suffices to show that the probability of the subbasis set complements vanish almost surely, i.e.,
 for all \\(i\\),
-\\(\Pi(A_i^c | X_{1:n}) \rightarrow 0\\)  and \\(\Pi(B_i^c | X_{1:n}) \rightarrow 0 \\).
+\\(\Pi(A_i^c | X_{1:n}) \rightarrow 0\\)  and \\(\Pi(B_i^c | X_{1:n}) \rightarrow 0 \\) a.s.
 
 That is, we only have to verify the testing condition on these subbasis sets.
 
