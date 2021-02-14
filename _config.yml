@@ -1,11 +1,15 @@
 # Dependencies
 markdown:         kramdown
+kramdown:
+      parse_block_html: true
 #markdown:         KramdownPygments
+#markdown:         CommonMarkGhPages
 highlighter:      rouge
 
 # plugins
 #gems: [jekyll-paginate]
 plugins:
+  - jekyll-commonmark-ghpages
   - jekyll-seo-tag
   - jekyll-paginate
 
