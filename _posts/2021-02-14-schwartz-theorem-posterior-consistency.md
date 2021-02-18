@@ -525,7 +525,7 @@ discrete spaces, provided that the prior satisfies the KL support condition.
 
 ## Example 3: Finite-dimensional models
 
-Suppose the elements model class \\(\mathcal{P}\\) are smoothly parameter parameterized
+Suppose the elements model class \\(\mathcal{P}\\) are parameterized
 by a finite-dimensional parameter: i.e.,
 \\(\theta \mapsto p_\theta\\),
 where \\(\theta \in \Theta \subseteq \mathbb{R}^d \\).
