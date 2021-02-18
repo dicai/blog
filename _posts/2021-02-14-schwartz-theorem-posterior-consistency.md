@@ -487,7 +487,9 @@ that is, since \\(g\\) is a bounded function (and w.l.o.g. can be rescaled such
         \leq e^{-n\epsilon^2/2}.
 \\]
 
-Similarly, for any \\(P \in A^c \\),
+Similarly, another application of Hoeffding's inequality along with the
+property that for any \\(P \in A^c \\),
+    \\(P(g) - P_0(g) > \epsilon\\) implies that
 \\[
         P^{(n)}(1-\phi_n)
         \leq P^{(n)}\left(-\frac{1}{n}\sum_{i=1}^n g(X_i) > -\int g(x) \, p(x)\, d\mu(x) + \epsilon/2  \right)
@@ -569,9 +571,11 @@ $$\begin{align}
 \end{align}$$
 
 
-By the [Borel--Cantelli lemma](https://en.wikipedia.org/wiki/Borel%E2%80%93Cantelli_lemma), the assumption
+By [Markov's inequality](https://en.wikipedia.org/wiki/Markov%27s_inequality), the assumption
 \\(P_0^{(n)}(\phi_n) \leq e^{-Cn}\\) implies that
-\\(\sum_{n\geq 1} P_0^{(n)}(\phi_n > e^{-Cn}) < \infty \\), and so
+\\(\sum_{n\geq 1} P_0^{(n)}(\phi_n > e^{-Cn}) < \infty \\); and so
+the [Borel--Cantelli lemma](https://en.wikipedia.org/wiki/Borel%E2%80%93Cantelli_lemma)
+then implies that
 \\(P_0^{(n)}(\phi_n > e^{-Cn} ~\text{i.o}) \\) = 0.
 
 Hence, the first term in the sum above \\(\phi_n \rightarrow 0\\) almost surely under \\(P_0^{(n)}\\)
@@ -735,7 +739,7 @@ $$\begin{align}
     e^{-n(C - \beta_0)}.
 \end{align}$$
 
-Since \\(\sum_{n \geq 1} e^{-n(C - \beta_0)} < \infty \\) for \\(C > \beta_0\\),
+Since Markov's inequality implies that \\(\sum_{n \geq 1} e^{-n(C - \beta_0)} < \infty \\) for \\(C > \beta_0\\),
 by the Borel--Cantelli lemma, the numerator goes to 0 almost surely.
 
  </details>
