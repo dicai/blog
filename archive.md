@@ -11,7 +11,7 @@ title: by topic
 
 Posts on specific research areas or topics.
 
-### \#nonparametricBayes
+### \#nonparametricBayes, \#BayesConsistency, and \#posteriorAsymptotics
 
 {% for post in site.posts %}
   {% for tag in post.tags %}
