@@ -760,7 +760,8 @@ But for strong consistency with respect to the L1 metric, uniformly consistent t
 not exist (LeCam, 1973 [4]; Barron, 1989 [5]).
 
 However, it is still possible to get strong posterior consistency via an
-extension of Schwartz's theorem. Barron (1988) [6] proved a early result on this,
+[extension of Schwartz's theorem](https://www.dianacai.com/blog/2021/02/18/extended-schwartz-theorem-posterior-consistency/).
+Barron (1988) [6] proved a early result on this,
 and Ghosal and van der Vaart, Theorem 6.17 (2017) [1] presents an extended Schwartz theorem
 that can be used to recover the classical Schwartz theorem as well as other
 consistency results based on metric entropy that are useful for proving, e.g., L1 consistency.
