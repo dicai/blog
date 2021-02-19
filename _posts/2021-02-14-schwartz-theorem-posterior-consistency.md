@@ -13,8 +13,10 @@ summary: In a 1965 paper "On Bayes procedures", [Lorraine Schwartz](https://www.
 
 In a 1965 paper "On Bayes procedures" [3],
 [Lorraine Schwartz](https://www.stat.ubc.ca/lorraine-schwartz-prize) proved a
-seminal result on posterior consistency,
-which has been instrumental in the development of rich suite of tools for
+seminal result on Bayesian consistency of the posterior distribution, which is
+the idea that as the number of data observations grows, the posterior distribution concentrates on
+neighborhoods of the true data generating distribution.
+Schwartz's theorem and its extensions have been instrumental in the development of a rich suite of tools for
 analyzing frequentist consistency of Bayesian methods.
 Under mild regularity conditions on the prior, Schwartz's theorem
 leads directly to posterior consistency with respect to the weak topology.
