@@ -490,7 +490,7 @@ that is, since \\(g\\) is a bounded function (and w.l.o.g. can be rescaled such
 \\]
 
 Similarly, another application of Hoeffding's inequality along with the
-property that for any \\(P \in A^c \\),
+property that for any \\(p \in A^c \\),
     \\(P(g) - P_0(g) > \epsilon\\) implies that
 \\[
         P^{(n)}(1-\phi_n)
@@ -509,8 +509,8 @@ density, as summarized by the corollary below.
 **Corollary (Schwartz).**
 Let \\(\Pi\\) be a prior on \\(\mathcal{P}\\) and suppose
 \\(p_0\\) is in the _KL support_ of the prior \\(\Pi\\).
-Then the posterior is consistent at \\(p_0\\), i.e.,
-for every neighborhood \\(U\\) of \\(p_0\\),
+Then the posterior is weakly consistent at \\(p_0\\), i.e.,
+for every weak neighborhood \\(U\\) of \\(p_0\\),
 
 $$\begin{align}
 \Pi(U \,|\, X_1,\ldots,X_n) \stackrel{n\rightarrow \infty}{\longrightarrow} 1,
