@@ -7,7 +7,7 @@ tags:
 - probability
 - nonparametricbayes
 - Bayesian asymptotics
-summary:
+summary: Schwartz's theorem is a classical tool used to derive posterior consistency and is the foundation of many modern results for establishing frequentist consistency of Bayesian methods. An extension of Schwartz's original theorem makes it much more broadly applicable. In this post, we review the extended Schwartz theorem, show how it can be used to recover the classical Schwartz theorem, and how it can be used to establish "strong" posterior consistency.
 ---
 
 [Schwartz's theorem](https://www.dianacai.com/blog/2021/02/14/schwartz-theorem-posterior-consistency/) is a classical tool used to derive posterior
