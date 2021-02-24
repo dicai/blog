@@ -75,8 +75,8 @@ more peaked around the true value of the parameter (indicated by the black dotte
 More generally, we can consider some true density \\(p_0\\) that lives in the
 model space \\(\mathcal{P}\\) and a prior on the model space.
 For instance in the example above, the prior on the parameter \\(\theta\\)
-induces a distribution on the space  \\(\mathcal{P}\\), and the true density
-\\(N(0,1)\\) is an element of \\(\mathcal{P}\\).
+induces a distribution on the space  \\(\mathcal{P} = \\{N(\theta,1): \theta \in \mathbb{R} \\} \\),
+and the true density \\(p_0 = N(0,1)\\) is an element of \\(\mathcal{P}\\).
 Roughly, posterior consistency means that as the number of data points \\(n \rightarrow \infty\\),
 the posterior distribution (on the model space) will "concentrate" on the true density \\(p_0\\).
 
@@ -163,7 +163,7 @@ following. -->
 
 The posterior distribution
 \\(\Pi(\cdot\,|\, X_1,\ldots,X_n)\\)
-is **consistent** at \\(p_0 \in p\\)
+is **consistent** at \\(p_0 \in \mathcal{P}\\)
 if for every neighborhood \\(U\\) of \\(p_0\\), with \\(P_0^{(n)}\\)-probability 1 (\\(P_0^{(n)}\\)-a.s.),
 
 $$\begin{align}
