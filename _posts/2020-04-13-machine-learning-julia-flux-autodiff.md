@@ -7,7 +7,7 @@ tags:
 - julia
 - flux
 - misc
-summary: Getting started with machine learning in Julia with Flux.
+summary: I try out Flux for doing machine learning in Julia.
 ---
 
 I decided to try out [Flux](https://github.com/FluxML), a machine learning library for [Julia](https://julialang.org/).
