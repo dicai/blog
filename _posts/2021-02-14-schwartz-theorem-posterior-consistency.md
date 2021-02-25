@@ -11,7 +11,7 @@ tags:
 summary: Schwartz's theorem and its extensions have been instrumental in the development of a rich suite of tools for analyzing frequentist consistency of Bayesian methods.  Under mild regularity conditions on the prior, Schwartz's theorem leads directly to posterior consistency with respect to the weak topology.  In this post, we will state the theorem, discuss the conditions of the theorem, show how the conditions are satisfied for the weak topology as well as a few situations where its easier to satisfy the conditions, and then present a proof of the theorem.
 ---
 
-In a 1965 paper "On Bayes procedures" [3],
+In a 1965 paper "[On Bayes procedures](https://link.springer.com/article/10.1007/BF00535479)" [3],
 [Lorraine Schwartz](https://www.stat.ubc.ca/lorraine-schwartz-prize) proved a
 seminal result on Bayesian consistency of the posterior distribution, which is
 the idea that as the number of data observations grows, the posterior distribution concentrates on
@@ -74,7 +74,7 @@ and the bulk of the posterior mass gets more tightly "peaked" around the
 true density with more observations.
 
 <div align="center">
-<img src="{{site.baseurl}}/assets/posterior_consistency_cartoon.png" align="center" width="800" alt="posterior consistency cartoon">
+<img src="{{site.baseurl}}/assets/posterior_consistency_cartoon.png" align="center" width="800" alt="posterior consistency schematic">
 <p>**Figure 2.**
 Cartoon illustrating the posterior mass (blue) around the true density \\(p_0\\)
     getting more concentrated as the number of data points increases.
@@ -349,12 +349,6 @@ A_i = \left\\{ p \in \mathcal{P}:  \int g_i p d\mu < \int g_i p_0 d\mu + \epsilo
 \\]
 
 
-<!--and
-\\[
-B_i = \left\\{ p \in \mathcal{P}:  \int g_i p d\mu > \int g_i p_0 d\mu - \epsilon_i \right\\}.
-\\]
--->
-
 Thus, the sets of the form \\(A_i\\) also form a subbasis for \\(V\\),
 and the complement \\(V^c = \bigcup_{i=1}^{2k} A_i^c \\) is then a finite union of the complements of the subbasis elements
 above.
@@ -391,8 +385,6 @@ holds for sets of the form
 A = \left\\{ p \in \mathcal{P}:  \int g(x) \, p(x) \, d\mu(x) < \int g(x) \, p_0(x) \, d\mu(x) + \epsilon \right\\}.
 \\]
 
-<!--The goal is to show that there exists a sequence of tests \\(\phi_n\\) such that
-(conditions) hold.-->
 
 Consider the test function
 
@@ -417,9 +409,6 @@ property that for any \\(p \in A^c \\),
         \leq P^{(n)}\left(-\frac{1}{n}\sum_{i=1}^n g(X_i) > -\int g(x) \, p(x)\, d\mu(x) + \epsilon/2  \right)
         \leq e^{-n\epsilon^2/2}.
 \\]
-<!-- where the first inequality holds because
-    for any \\(P \in A^c \\),    \\( - \int g dP < - \int g dP_0\\).
--->
 
 
 Thus, in order to guarantee weak posterior consistency holds, we only need to
@@ -456,17 +445,10 @@ the tests needed exist under mild regularity conditions, i.e., identifiability
 and continuity of the map \\(\theta \mapsto p_\theta\\);
 see, e.g., van der Vaart [7] (1998), Lemma 10.6.
 
-<!--
-(In the case that \\(\Theta\\) is not compact, then some additional conditions are needed.)
--->
 
 
 # Proof of Schwartz's theorem
 
-<!--A proof of Schwartz's theorem can be found in
-Ghosal and van der Vaart (2017) xx [1]
-and Ghosh and Ramamoorthi (2003) xx [2], and our presentation here mostly follows that of the latter.
--->
 
 First, rewrite the posterior distribution of the _complement_ of the
 neighborhood \\(U\\) as:
@@ -478,8 +460,6 @@ $$\begin{align}
     &= \frac{\int_{U^c} \prod_{i=1}^n \frac{p(X_i)}{p_0(X_i)} \,d\Pi(p)}{\int_{\mathcal{P}} \prod_{i=1}^n \frac{p(X_i)}{p_0(X_i)} \,d\Pi(p)}.
 \end{align}$$
 
-<!--Note that in the above posterior, we have written the posterior probability of the _complement_ of the
-neighborhood \\(U\\). -->
 
 Since the test functions \\(\phi_n \in [0,1]\\), we can upper bound the posterior from above as
 
@@ -504,10 +484,6 @@ Hence, the first term in the sum above \\(\phi_n \rightarrow 0\\) almost surely 
 as \\(n \rightarrow \infty\\).
 
 
-<!-- The two conditions of the theorem -- (1) that the true density \\(p_0\\) is in the KL
-support of the prior and (2) that ...
--- control the behavior of the denominator and numerator, respectively.
--->
 
 It remains to show that the second term has the appropriate behavior.
 The goal is to control the behavior of the numerator and the denominator of the
@@ -690,18 +666,6 @@ In addition, Schwartz's theorem has been extended to other related models, such
 as priors that vary with the data, misspecified models, and non i.i.d. models.
 
 
-
-<!--
-## Posterior rates of contraction
-
-## Model misspecification
-
-## Power posteriors
-
-## Priors that vary with n
-
-## Predictive consistency
--->
 
 
 
