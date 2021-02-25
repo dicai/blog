@@ -8,7 +8,7 @@ tags:
 - nonparametricbayes
 - Bayesian asymptotics
 - Bayesian consistency
-summary: In a 1965 paper "On Bayes procedures", [Lorraine Schwartz](https://www.stat.ubc.ca/lorraine-schwartz-prize) proved a seminal result on posterior consistency, which has been instrumental in the development of rich suite of tools for analyzing frequentist consistency of Bayesian methods. Under mild regularity conditions on the prior, Schwartz's theorem leads directly to posterior consistency with respect to the weak topology.
+summary: Schwartz's theorem and its extensions have been instrumental in the development of a rich suite of tools for analyzing frequentist consistency of Bayesian methods.  Under mild regularity conditions on the prior, Schwartz's theorem leads directly to posterior consistency with respect to the weak topology.  In this post, we will state the theorem, discuss the conditions of the theorem, show how the conditions are satisfied for the weak topology as well as a few situations where its easier to satisfy the conditions, and then present a proof of the theorem.
 ---
 
 In a 1965 paper "On Bayes procedures" [3],
