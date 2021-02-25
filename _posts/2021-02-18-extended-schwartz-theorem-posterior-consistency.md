@@ -29,15 +29,6 @@ establish "strong" posterior consistency.
 
 # Preliminaries and notation
 
-<!--
-We describe the preliminary Bayesian inference set up in [xx](...) but briefly review some
-notation here.
-
-- model + densities / dominated
-- Joint distributions, measure of a function (i.e., integration / expectations)
-- posterior distribution + assumptions on spaces
-- KL neighborhoods, KL support on prior
--->
 
 We consider the same i.i.d. modeling setting as in our discussion on classical Schwartz.
 Let \\(\mathcal{P}\\) denote our model class, which is a
@@ -127,20 +118,11 @@ $$
 
 ### Remarks on theorem statement
 
-<!--
-Ghosal and van der Vaart provide an extended version of Schwartz's theorem.
--->
 
 The theorem above provides some conditions under which the posterior
 probability of the set \\(\mathcal{P}\_n \\) goes to 0 with probability 1.
 At the expense of its greater generality, this version of the theorem may as a
 result appear more mysterious in its application.
-<!--
-If you're familiar with the [classical Schwartz's theorem statement](...),
-it may be unclear what each of these sets is referring to;
-The conditions on the test function are new, and there's an additional
-assumption on the prior.
--->
 
 First recall that \\(\mathcal{P}\\) is the space of densities of our model
 class. The statement describes behaviors for two general subsets of densities
@@ -159,16 +141,6 @@ class. The statement describes behaviors for two general subsets of densities
     decomposing the complement of a neighborhood \\(U^c\\) into a union of two
     other subsets, and apply this general theorem to each of the other subsets.
 
-<!--
-E.g., complement of neighborhood U
-(why is it allowed to depend on n?)
-Note these sets appear in the conditions (a) and (b) and in the final statement of the result.
-While the original Schwartz theorem is showing that the complement of the
-neighborhood goes to 0 a.s., by having a more general set P_n, we can split
-any neighborhood into difference pieces and show the posterior probability
-of those subsets each go to 0 a.s.
-We'll see an example in the proof of the corollary.
--->
 
 
 Regarding the conditions (a) and (b), note that either (a) _**or**_ (b) needs to
@@ -211,13 +183,6 @@ And in the extended Schwartz theorem, the second part of the condition replaces
     asymptotically, the
     posterior will also assign a small amount of mass to that set.
 
-<!--- Give intuitive interpretations of conditions (a) and (b)
-    (maybe related this back to the sequence of consistent tests condition?)
-- Explain that (b) is literally a special case of (a) when the tests are equal to 0
-    Note that (b) is just a special case of (a), but this form can be useful for
-    other things (like what?)
-- Explain why there are two conditions (a) and (b) and what they're typically used for:
--->
 
 
 ### Proof of theorem
@@ -348,22 +313,6 @@ that the same testing conditions as
 classical Schwartz hold, i.e., that the test sequence is uniformly consistent.
 
 
-<!--
-- How do I interpret the measurable partitions? Where does this come from / why
-is this introduced?
-- What does it mean for a (complement of a?) set to be ''tested away''? Does it mean that the
-probability mass goes to 0?
-- Can we apply this with each of the partitions being the full set? Do they
-don't have to disjoint?
-For the usual Schwartz's theorem, I think we want one set to be the complement
-of the neighborhood and one set to be the empty set.
-*OR* one is the full space of densities and the empty set.
-Depending on whether or not P_n refers to the complement of the neighborhood or
-the full space???
-It doesn't make sense for P_n = U^c because then P_{n,1} \cap U^c is just U^c,
-   since P_{n,1} \subset P_n?
-- Intuitive explanation of the conditions on the test functions?
--->
 
 ### Proof of the corollary
 
@@ -412,28 +361,6 @@ Putting these together, we have
 \\]
 </details>
 
-<!--
-## Special case: Schwartz's Theorem (Classical)
-
-We now state and prove the classical Schwartz's theorem using the extended
-Schwartz's theorem.
-
-**Theorem (Schwartz).**
-
-<details>
-   <summary style="color:maroon;font-size:14pt">_(Expand for proof)_
-   </summary>
-   This
-</details>
-
-
-# Examples
-
-## Example 1: Finite-dimensional models
-
-## Example 2: Weak consistency
-
--->
 
 # Strong posterior consistency
 
@@ -471,14 +398,6 @@ results.
 ## Strong posterior consistency via extended Schwartz
 
 
-<!--
-Need to explain:
-- convex distances / balls
-- covering numbers
-
-Is there a way to explain this intuitively in terms of posterior consistency
-before formally stating the proof, e.g., the pictures in the slides?
--->
 Again we consider the model \\(X_{1:n} \,|\, p \stackrel{i.i.d.}{\sim} p\\) and \\(p \sim \Pi \\).
 The following theorem leads to posterior consistnecy with respect to any distance
 \\(d\\) that is bounded above by the Hellinger distance, e.g., the \\(\mathcal{L}\_1\\) distance.

@@ -26,19 +26,6 @@ its easier to satisfy the conditions, and then present a proof of the theorem.
 
 
 
-<!--
-* Table of contents
-{::options toc_levels=1}
-
-* Table of contents
-{:toc}
-
-# Preliminaries
-
-This post assumes familiarity with the topics discussed in the posts on:
-1. The posterior distribution
-2. The space of probability measures
--->
 
 # Posterior consistency: an informal picture
 
@@ -101,8 +88,6 @@ infinity, the posterior mass on densities arbitrarily close to the true
 density will converge to 1.
 Then we will present Schwartz's theorem, one of the primary foundational tools for
 establishing posterior consistency.
-<!--distribution defined above, i.e., the behavior of the posterior distribution
-as the number of data points \\(n \rightarrow \infty\\).-->
 
 ## Implications of consistency
 
@@ -157,9 +142,6 @@ the posterior distribution.
 
 # Posterior consistency
 
-<!--As we discussed in [the overview on posterior consistency post](xx),
-the definition of posterior consistency that we are working with is the
-following. -->
 
 The posterior distribution
 \\(\Pi(\cdot\,|\, X_1,\ldots,X_n)\\)
@@ -246,12 +228,6 @@ constraints on the prior and model class.
 
 ## Condition 1: KL support of the prior
 
-<!--Define the Kullback-Leibler divergence between densities \\(p_0\\) and \\(p\\) as
-
-$$\begin{align}
-K(p_0, p) := \int p_0 \log\left( \frac{p_0}{p} \right) d\mu.
-\end{align}$$
--->
 
 A basic property of the model needed for posterior consistency is that the prior
 supports the true density \\(p_0\\).
@@ -273,11 +249,6 @@ only that there is positive mass near \\(p_0\\); stronger results for posterior
 rates of contraction modify this condition by requiring that there is
 _sufficient_ amount of mass near the true density.
 
-<!--
-TBD: FUTURE EDIT
-### Examples (?)
-(inner probability comment?)
--->
 
 ## Condition 2: Uniformly consistent sequence of tests
 
@@ -324,57 +295,6 @@ Note that due to the difficulty in directly verifying the uniformly consistent t
 condition, these conditions themselves are generally not directly checked directly.
 Some equivalent conditions are given in Ghosh and Ramamoorthi [2], Proposition 4.4.1.
 
-
-<!--
-Recall in hypothesis testing,
-that a Type I error is (....),
-     and a Type II error is (....).
-     The _power_ of a statistical test is ...
-     : for a type II error probability of .... the corresponding statistical
-     power is 1 - ..
--->
-
-<!--
-Denote \\(P^{(n)} \phi_n\\) as the power of the test \\(\phi_n\\):
-
-$$
-\begin{align}
-P^{(n)} \phi_n := \int \phi_n dP^{(n)},
-\end{align}
-$$
-
-i.e., (?? the probability of rejection if the data are sampled from P??).
-
-
-
-
-(provide intuituion for what the tests mean)
-The probability of a type I error (rate) for testing the null hypothesis, i.e.,
- \\(P_0^{(n)}\phi_n\\),
-    goes to 0.
-    (probability of rejection if data are truly sampled from P_0)
-* Pr(P is equal to P_0 but we reject) -> 0
-
-The probability of a type II error for \\(p \in U^c\\), i.e.,
- \\(P^{(n)}(1-\phi_n)\\),
-    goes to 0.
-    (Or the power of test / true positive rate  goes to 1.)
-    (probability of not rejecting if data are truly sampled from P.)
-* Pr(P is not equal to P_0 but we do not reject) -> 0
--->
-
-<!--
-An equivalent condition to the uniformly consistent sequence of tests condition
-in the theorem statement is to assume that the tests have **exponentially small
-error probabilities** (Ghosh and Ramamoorthi [2], Proposition 4.4.1): i.e., for some \\(C > 0\\),
-
-$$\begin{align}
-P_0^{(n)}(\phi_n) \leq e^{-Cn}, \qquad \sup_{p \in U^c} P^{(n)}(1- \phi_n) \leq e^{-Cn},
-\end{align}$$
-
-and in some formulations of the theorem, this condition is given in place of the
-uniformly consistent sequence condition.
--->
 
 We now discuss three well-studied examples where uniformly consistent sequence of tests exist:
 (1) under the weak topology,
