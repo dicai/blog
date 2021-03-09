@@ -25,6 +25,8 @@ But an extension of Schwartz's original theorem makes it much more broadly
 applicable. In this post, we review the extended Schwartz theorem, show how it
 can be used to recover the classical Schwartz theorem, and how it can be used to
 establish "strong" posterior consistency.
+For an introduction to posterior consistency and basic definitions, see
+[our post on the original Schwartz result](https://www.dianacai.com/blog/2021/02/14/schwartz-theorem-posterior-consistency/).
 
 
 # Preliminaries and notation
@@ -62,7 +64,7 @@ for all measurable subsets \\(A \subseteq \mathcal{P} \\),
 
 $$\begin{align}
 \Pi(A \,|\, X_1,\ldots, X_n)
-    = \frac{\int_{A} \prod_{i=1}^n p(X_i) \,d\Pi(p)}{\int_p \prod_{i=1}^n p(X_i) \,d\Pi(p)}.
+    = \frac{\int_{A} \prod_{i=1}^n p(X_i) \,d\Pi(p)}{\int_{\mathcal{P}} \prod_{i=1}^n p(X_i) \,d\Pi(p)}.
 \end{align}$$
 
 
@@ -91,7 +93,7 @@ either condition (a) or condition (b) for some constant \\(C > c\\):
 
 $$
 \begin{align}
-\phi_n \stackrel{n\rightarrow\infty}{\longrightarrow} 0, ~~P_0^{(n)}\text{-a.s.},
+\phi_n \stackrel{n\rightarrow\infty}{\longrightarrow} 0, ~~P_0^{(\infty)}\text{-a.s.},
     \quad
     \text{and}~~
 \int_{\mathcal{P}_n} P^{(n)}(1-\phi_n) \, d\Pi(p) \leq e^{-Cn}.
@@ -111,7 +113,7 @@ Then
 
 $$
 \begin{align}
-\Pi(\mathcal{P}_n \,|\, X_{1:n}) \stackrel{n\rightarrow\infty}{\longrightarrow} 0, \quad P_0^{(n)}\text{-a.s.}
+\Pi(\mathcal{P}_n \,|\, X_{1:n}) \stackrel{n\rightarrow\infty}{\longrightarrow} 0, \quad P_0^{(\infty)}\text{-a.s.}
 \end{align}
 $$
 
@@ -150,7 +152,7 @@ Regarding the conditions (a) and (b), note that either (a) _**or**_ (b) needs to
     corollary.
     Thus, in order to prove
     \\(
-        \Pi(\mathcal{P}\_n \,|\, X_{1:n}) \stackrel{n\rightarrow\infty}{\longrightarrow} 0 ~(P_0^{(n)}\text{-a.s.}),
+        \Pi(\mathcal{P}\_n \,|\, X_{1:n}) \stackrel{n\rightarrow\infty}{\longrightarrow} 0 ~(P_0^{(\infty)}\text{-a.s.}),
     \\)
     we only need to assume condition (a) holds.
 
@@ -202,11 +204,11 @@ $$\begin{align}
     \phi_n + \frac{(1- \phi_n) \int_{\mathcal{P}_n} \prod_{i=1}^n \frac{p(X_i)}{p_0(X_i)} \,d\Pi(p)}{\int_{\mathcal{P}} \prod_{i=1}^n \frac{p(X_i)}{p_0(X_i)} \,d\Pi(p)}.
 \end{align}$$
 
-The first term \\(\phi_n\rightarrow 0\\) in \\(P_0^{(n)}\\)-a.s. by the first
+The first term \\(\phi_n\rightarrow 0\\) in \\(P_0^{(\infty)}\\)-a.s. by the first
 part of assumption (a).
 
 Using very similar steps as the classical Schwartz proof,
-the denominator is bounded below as follows: for any \\(c' > c\\), eventually \\(P_0^{(n)}\\)-a.s.,
+the denominator is bounded below as follows: for any \\(c' > c\\), eventually \\(P_0^{(\infty)}\\)-a.s.,
 
 $$\begin{align}
     \int_{\mathcal{P}} \prod_{i=1}^n \frac{p(X_i)}{p_0(X_i)} \,d\Pi(p)
@@ -335,7 +337,7 @@ That is, suppose there there exist tests \\(\phi_n\\) such that
 
 $$
 \begin{align}
-\phi_n \stackrel{n\rightarrow\infty}{\longrightarrow} 0, ~~P_0^{(n)}\text{-a.s.},
+\phi_n \stackrel{n\rightarrow\infty}{\longrightarrow} 0, ~~P_0^{(\infty)}\text{-a.s.},
     \qquad
     \text{and}~~
 \int_{U^c \cap \mathcal{P}_{n,1}} P^n(1-\phi_n) \, d\Pi(p) \leq e^{-Cn}.
@@ -357,7 +359,7 @@ Putting these together, we have
     \Pi(U^c \,|\, X_{1:n}) \leq
 \Pi(U^c \cap \mathcal{P}\_{n,1} \,|\, X_{1:n}) +
 \Pi(\mathcal{P}\_{n,2} \,|\, X_{1:n})
-    \rightarrow 0, \quad P_0^{(n)}\text{-a.s.}
+    \rightarrow 0, \quad P_0^{(\infty)}\text{-a.s.}
 \\]
 </details>
 

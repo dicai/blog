@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Posterior consistency via Schwartz's Theorem
+title: Schwartz's Theorem and weak posterior consistency
 author: Diana Cai
 tags:
 - statistics
@@ -11,19 +11,17 @@ tags:
 summary: Schwartz's theorem and its extensions have been instrumental in the development of a rich suite of tools for analyzing frequentist consistency of Bayesian methods.  Under mild regularity conditions on the prior, Schwartz's theorem leads directly to posterior consistency with respect to the weak topology.  In this post, we will state the theorem, discuss the conditions of the theorem, show how the conditions are satisfied for the weak topology as well as a few situations where its easier to satisfy the conditions, and then present a proof of the theorem.
 ---
 
-In a 1965 paper "[On Bayes procedures](https://link.springer.com/article/10.1007/BF00535479)" [3],
+**Schwartz's theorem for posterior consistency:**
+In a 1965 paper "[On Bayes procedures](https://link.springer.com/article/10.1007/BF00535479),"
 [Lorraine Schwartz](https://www.stat.ubc.ca/lorraine-schwartz-prize) proved a
-seminal result on Bayesian consistency of the posterior distribution, which is
+seminal result on _Bayesian consistency_ of the posterior distribution, which is
 the idea that as the number of data observations grows, the posterior distribution concentrates on
 neighborhoods of the true data generating distribution.
-Schwartz's theorem and its extensions have been instrumental in the development of a rich suite of tools for
-analyzing frequentist consistency of Bayesian methods.
 Under mild regularity conditions on the prior, Schwartz's theorem
 leads directly to posterior consistency with respect to the weak topology.
 In this post, we will state the theorem, discuss the conditions of the theorem,
 show how the conditions are satisfied for the weak topology as well as a few situations where
 its easier to satisfy the conditions, and then present a proof of the theorem.
-
 
 
 
@@ -89,19 +87,6 @@ density will converge to 1.
 Then we will present Schwartz's theorem, one of the primary foundational tools for
 establishing posterior consistency.
 
-## Implications of consistency
-
-Posterior consistency -- which represents convergence of the posterior towards
-perfect knowledge -- has several implications:
-
-1. *Frequentist connection*: if the posterior is consistent, then (under some additional technical
-   conditions on the metric used for convergence) the posterior mean is consistent.
-
-2. *Bayesian connection*: two Bayesian with different priors will have "merging
-   opinions" iff posterior consistency holds. Here a merging opinions refers to
-   the two posteriors of the Bayesian getting closer and closer and we observe
-   more data.
-
 # Modeling assumptions
 
 We consider a model class given by a space of densities \\(\mathcal{P}\\)
@@ -124,18 +109,22 @@ where each \\(X_i \in \mathbb{X}\\).
 In this post, we assume the model is _well-specified_ and that there is some true
 density \\(p_0 \in \mathcal{P}\\) from which the data are generated.
 
-The posterior distribution, \\(\Pi(\cdot \,|\, X_1,\ldots, X_n)\\),
-        can be expressed via the Bayes's formula:
+Under certain conditions on the topology of the parameter space, the posterior
+distribution exists, and
+furthermore, because we assume that for every distribution \\(P\\) in our model class, \\(P \ll \mu\\),
+we can compute a version of the
+posterior distribution via the _Bayes's formula_ (Ghosal and van der Vaart [1, Chapter 1]).
+
+The **posterior distribution**
+\\(\Pi(\cdot \,|\, X_1,\ldots, X_n)\\) can be expressed as:
 for all measurable subsets \\(A \subseteq \mathcal{P} \\),
 
 $$\begin{align}
 \Pi(A \,|\, X_1,\ldots, X_n)
-    = \frac{\int_{A} \prod_{i=1}^n p(X_i) \,d\Pi(p)}{\int_p \prod_{i=1}^n p(X_i) \,d\Pi(p)}.
+    = \frac{\int_{A} \prod_{i=1}^n p(X_i) \,d\Pi(p)}{\int_{\mathcal{P}} \prod_{i=1}^n p(X_i) \,d\Pi(p)}.
 \end{align}$$
 
-Under certain conditions on the topology of the parameter space, the above version of the posterior exists;
-we refer to Ghosal and van der Vaart [1, Chapter 1] for details regarding the existence of
-the posterior distribution.
+
 
 
 
@@ -146,28 +135,50 @@ the posterior distribution.
 The posterior distribution
 \\(\Pi(\cdot\,|\, X_1,\ldots,X_n)\\)
 is **consistent** at \\(p_0 \in \mathcal{P}\\)
-if for every neighborhood \\(U\\) of \\(p_0\\), with \\(P_0^{(n)}\\)-probability 1 (\\(P_0^{(n)}\\)-a.s.),
+if for every neighborhood \\(U\\) of \\(p_0\\), with \\(P_0^{(\infty)}\\)-probability 1
+(\\(P_0^{(\infty)}\\)-a.s.),
 
 $$\begin{align}
 \Pi(U \,|\, X_1,\ldots,X_n) \stackrel{n\rightarrow \infty}{\longrightarrow} 1.
 \end{align}$$
 
+**Remark 1.** An alternative way to write the statement above is: for every
+neighborhood \\(U\\) of \\(p_0\\),
+
+$$\begin{align}
+P_0^{(\infty)}\left(\Pi(U \,|\, X_1,\ldots,X_n) \stackrel{n\rightarrow \infty}{\longrightarrow} 1\right) = 1.
+\end{align}$$
 
 
-Note that there are alternative definitions of posterior consistency: sometimes
+**Remark 2.** We typically consider the case where \\(\mathcal{P} \\) is a metric space, and so
+the neighborhoods of interest are balls around \\(p_0\\), i.e.,
+    \\(U = \\{p \in \mathcal{P}: d(p_0, p) \leq \epsilon\\} \\).
+Commonly used metrics \\(d\\) include a weak metric (e.g., bounded Lipschitz or Prokhorov),
+a strong metric (e.g., total variation or Hellinger), or -- if we're working with
+a Euclidean space for the sample space \\(\mathbb{X}\\) -- a Kolmogorov-Smirnov metric.
+Note that proving consistency with respect to a strong metric is typically more
+challenging than with respect to a weak metric and requires stronger conditions.
+
+**Remark 3.** There are alternative definitions of posterior consistency: sometimes
 the definition is stated in terms of convergence in probability (as opposed to a.s. convergence) or consistency
 defined explicitly with a specific topology in mind.
 For this reason, in our definition above, we avoid the use of the terminology "weak" or "strong"
 consistency, as that terminology has been used for both the type of convergence of the posterior
 (i.e., convergence in probability vs a.s. convergence [1]) and to refer to the topology (i.e., weak topology vs strong topology [2]).
 
-We typically consider the case where \\(\mathcal{P} \\) is a metric space, and so
-the neighborhoods of interest are balls around \\(p_0\\).
-Commonly used metrics include a weak metric (e.g., bounded Lipschitz or Prokhorov),
-a strong metric (e.g., total variation or Hellinger), or -- if we're working with
-a Euclidean space for the sample space \\(\mathbb{X}\\) -- a Kolmogorov-Smirnov metric.
-Note that proving consistency with respect to a strong metric is typically more
-challenging than with respect to a weak metric and requires stronger conditions.
+
+## Implications of consistency
+
+Posterior consistency -- which represents convergence of the posterior towards
+perfect knowledge -- has several implications:
+
+1. *Frequentist connection*: if the posterior is consistent, then (under some additional technical
+   conditions on the metric used for convergence) the posterior mean is consistent.
+
+2. *Bayesian connection*: two Bayesian with different priors will have "merging
+   opinions" iff posterior consistency holds. Here a merging opinions refers to
+   the two posteriors of the Bayesian getting closer and closer and we observe
+   more data.
 
 
 # Schwartz's theorem
@@ -211,7 +222,7 @@ for every neighborhood \\(U\\) of \\(p_0\\),
 
 $$\begin{align}
 \Pi(U \,|\, X_1,\ldots,X_n) \stackrel{n\rightarrow \infty}{\longrightarrow} 1,
-    \quad P_0^{(n)}\text{-a.s.}
+    \quad P_0^{(\infty)}\text{-a.s.}
 \end{align}$$
 
 **Remarks.**
@@ -313,7 +324,7 @@ To establish weak posterior consistency, we need to show that for any
 weak neighborhood \\(U\\) of \\(p_0\\),
 
 \\[
-\Pi(U^c | X_{1:n}) \stackrel{n\rightarrow\infty}{\longrightarrow 0}, \qquad P_0^{(n)}\text{-a.s.},
+\Pi(U^c | X_{1:n}) \stackrel{n\rightarrow\infty}{\longrightarrow 0}, \qquad P_0^{(\infty)}\text{-a.s.},
 \\]
 
 and so we need to verify the testing condition with respect to the complement
@@ -369,7 +380,7 @@ $$
 
 
 Thus, in order to prove that \\(\Pi(U^c | X_{1:n}) \rightarrow 0,
-(P_0^{(n)}\text{-a.s.})\\) as \\(n \rightarrow \infty\\),
+(P_0^{(\infty)}\text{-a.s.})\\) as \\(n \rightarrow \infty\\),
 it suffices to show that the probability of the subbasis set complements vanish almost surely, i.e.,
 for all \\(i\\),
 \\(\Pi(A_i^c | X_{1:n}) \rightarrow 0\\) a.s.
@@ -403,7 +414,8 @@ that is, since \\(g\\) is a bounded function (and w.l.o.g. can be rescaled such
 
 Similarly, another application of Hoeffding's inequality along with the
 property that for any \\(p \in A^c \\),
-    \\(P(g) - P_0(g) > \epsilon\\) implies that
+    \\(\int g(x) p(x) d\mu(x) - \int g(x) p_0(x) d\mu(x)  > \epsilon\\)
+    implies that
 \\[
         P^{(n)}(1-\phi_n)
         \leq P^{(n)}\left(-\frac{1}{n}\sum_{i=1}^n g(X_i) > -\int g(x) \, p(x)\, d\mu(x) + \epsilon/2  \right)
@@ -418,12 +430,12 @@ density, as summarized by the corollary below.
 **Corollary (Schwartz).**
 Let \\(\Pi\\) be a prior on \\(\mathcal{P}\\) and suppose
 \\(p_0\\) is in the _KL support_ of the prior \\(\Pi\\).
-Then the posterior is weakly consistent at \\(p_0\\), i.e.,
+Then the posterior is _weakly consistent_ at \\(p_0\\), i.e.,
 for every weak neighborhood \\(U\\) of \\(p_0\\),
 
 $$\begin{align}
 \Pi(U \,|\, X_1,\ldots,X_n) \stackrel{n\rightarrow \infty}{\longrightarrow} 1,
-    \quad P_0^{(n)}\text{-a.s.}
+    \quad P_0^{(\infty)}\text{-a.s.}
 \end{align}$$
 
 
@@ -475,19 +487,20 @@ $$\begin{align}
 
 By [Markov's inequality](https://en.wikipedia.org/wiki/Markov%27s_inequality), the assumption
 \\(P_0^{(n)}(\phi_n) \leq e^{-Cn}\\) implies that
-\\(\sum_{n\geq 1} P_0^{(n)}(\phi_n > e^{-Cn}) < \infty \\); and so
+\\(\sum_{n\geq 1} P_0^{(n)}(\phi_n > e^{-Cn}) < \infty, \\)
+and so
 the [Borel--Cantelli lemma](https://en.wikipedia.org/wiki/Borel%E2%80%93Cantelli_lemma)
 then implies that
-\\(P_0^{(n)}(\phi_n > e^{-Cn} ~\text{i.o}) \\) = 0.
+\\[P_0^{(\infty)}(\phi_n > e^{-Cn} ~\text{occurs for infinitely many}~ n)  = 0. \\]
 
-Hence, the first term in the sum above \\(\phi_n \rightarrow 0\\) almost surely under \\(P_0^{(n)}\\)
+Hence, the first term in the sum above \\(\phi_n \rightarrow 0\\) almost surely under \\(P_0^{(\infty)}\\)
 as \\(n \rightarrow \infty\\).
 
 
 
 It remains to show that the second term has the appropriate behavior.
 The goal is to control the behavior of the numerator and the denominator of the
-second term of the sum such that (with \\(P_0^{(n)}\\)-probability 1) this ratio converges to 0.
+second term of the sum such that (with \\(P_0^{(\infty)}\\)-probability 1) this ratio converges to 0.
 
 ## Step 1:
 
@@ -497,7 +510,7 @@ The KL support condition on the prior \\(\Pi\\) -- i.e., for all \\(\epsilon > 0
 $$\begin{align}
     \liminf_{n\rightarrow \infty}~ e^{n\beta}
     \int_p \prod_{i=1}^n \frac{p(X_i)}{p_0(X_i)} \,d\Pi(p) = \infty
-    \quad P_0^{(n)}\text{-a.s.}
+    \quad P_0^{(\infty)}\text{-a.s.}
 \end{align}$$
 
 
@@ -544,7 +557,7 @@ $$\begin{align}
 Now consider the integrand in the line above and its limiting behavior (thus  evaluating its liminf).
 The
 <a href="https://en.wikipedia.org/wiki/Law_of_large_numbers#Strong_law">strong law of large numbers</a>
-implies that with \\(P_0^{(n)}\\)-probability 1, for all \\(p \in K_\epsilon(p_0)\\),
+implies that with \\(P_0^{(\infty)}\\)-probability 1, for all \\(p \in K_\epsilon(p_0)\\),
 
 $$\begin{align}
     -\frac{1}{n}\sum_{i=1}^n\log\left(\frac{p_0(X_i)}{p(X_i)}\right)
@@ -558,7 +571,7 @@ $$\begin{align}
 where the inequality holds since  \\(p \in K_\epsilon(p_0)\\),
 
 
-This then implies that with \\(P_0^{(n)}\\)-probability 1,
+This then implies that with \\(P_0^{(\infty)}\\)-probability 1,
 
 $$\begin{align}
     \exp\left(n\left[\beta -\frac{1}{n}\sum_{i=1}^n\log\left(\frac{p_0(X_i)}{p(X_i)}\right)\right]\right)
@@ -578,7 +591,7 @@ $$\begin{align}
     \liminf_{n\rightarrow \infty}
     \exp\left(n\left[\beta -\frac{1}{n}\sum_{i=1}^n\log\left(\frac{p_0(X_i)}{p(X_i)}\right)\right]\right)
     \,d\Pi(p)
-    = \infty \quad P_0^{(n)}\text{-a.s.},
+    = \infty \quad P_0^{(\infty)}\text{-a.s.},
 \end{align}$$
 
 and so the conclusion holds.
@@ -591,7 +604,7 @@ The existence of a uniformly sequence of tests is used to show that
 $$\begin{align}
     \lim_{n\rightarrow \infty}~ e^{n\beta_0}
     (1-\phi_n) \int_{U^c} \prod_{i=1}^n \frac{p(X_i)}{p_0(X_i)} \,d\Pi(p) =0
-    \quad P_0^{(n)} \text{-a.s.}
+    \quad P_0^{(\infty)} \text{-a.s.}
 \end{align}$$
 
 
